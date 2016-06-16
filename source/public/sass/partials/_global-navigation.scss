@@ -1,0 +1,14 @@
+.global-navigation{
+    background-color: $global-nav-colour;
+    min-height: 80px;
+}
+
+.import-file_link{
+    position: absolute;
+    top:20px;
+    left:20px;
+    background-color:white;
+    padding:10px;
+    @include border-radius(10px);
+    border:none;
+}

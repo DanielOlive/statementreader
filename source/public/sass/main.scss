@@ -1,0 +1,95 @@
+
+$global-nav-colour:#3d4a57;
+$border-colour: #666;
+$body-colour: #f2f2f2;
+$colour-White: #FFF;
+
+
+@import 'meyer-reset.scss';
+@import 'mixins.scss';
+@import 'partials/global-navigation.scss';
+@import 'partials/footer.scss';
+
+
+
+
+body{
+    background: $body-colour;
+    font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.chart-title{
+    border-bottom: 1px solid #d7d7d7;
+    color: #666;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 7px 10px 4px;
+    margin-bottom: 20px;
+}
+
+.transactions-list_total{
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    background-color: white;
+    padding: 15px;
+    @include border-radius(10px);
+}
+
+.total-amount{
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    padding:20px;
+    max-width:1024px;
+    margin: 10px auto 30px;
+
+}
+.border{
+    border-bottom: 1px solid #d7d7d7;
+    color: $border-colour;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 7px 10px 4px;
+    background-color: white;
+    @include border-radius(10px);
+}
+
+
+
+.transactions-list__item{
+    padding:5px 10px;
+    div{
+        width:20%;
+        display:inline-block;
+        vertical-align: middle;
+    }
+    .transactions-list__item-date{
+        width:10%;
+    }
+    .transactions-list__item-retailer{
+        width:80%;
+    }
+    .transactions-list__item-amount{
+        width: 4%;
+        text-align: right;
+
+    }
+    .transactions-list__item-checkbox{
+        padding-left: 5px;
+        width:4%;
+        input{
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    &.active{
+        background-color:$body-colour;
+    }
+}
+.transactions-list_total-amount{
+    text-align: right;
+}
