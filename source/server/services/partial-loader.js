@@ -11,7 +11,7 @@ var path = require('path')
 
 module.exports = function(){
 
-    var partialsDir = path.resolve(__dirname,'../views/partials/');
+    var partialsDir = path.resolve(__dirname,'../../views/partials/');
 
     filenames = fs.readdirSync(partialsDir);
     filenames.forEach(function (filename) {

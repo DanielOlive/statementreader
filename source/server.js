@@ -2,13 +2,13 @@
  * Created by dolive on 5/20/16.
  */
 var config = require('./server/config');
-var statementReader = require('./server/statementReader');
+var statementReader = require('./server/services/statementReader');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var hbs = require('hbs');
 var reader = statementReader();
-var partialLoader = require('./server/partial-loader')();
+var partialLoader = require('./server/services/partial-loader')();
 var multer = require('multer');
 var upload = multer({dest: './server/uploads/'});
 

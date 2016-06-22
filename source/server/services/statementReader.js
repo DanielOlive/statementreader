@@ -5,7 +5,7 @@ var csv = require('csv-parser'),
     fs = require('fs'),
     _ = require('underscore'),
     path = require('path'),
-    config = require('./config'),
+    config = require('../config'),
     listData = [],
     self,
     json = [],
@@ -24,7 +24,7 @@ module.exports = function () {
     return {
         importCsvFile:function(_file, _callback){
 
-        var csvData =null;
+        var csvData = null;
         self=this;
 
         self.convertCSVData(_file, function(data){
@@ -33,32 +33,40 @@ module.exports = function () {
                 self.mergedata(jsonData, csvData);
             })
         });
+            console.log('importing file');
 
         },
         mergedata:function(_old, _new){
-            console.log(_new);
+            _new = JSON.parse(_new);
+
+            //var combindData = _.union(_new, _old);
+            var combindData = _.uniq(_.union(_old.account,_new.account), false, function(item, key, Reference){ return item.Reference; });
+                //console.log(combindData);
         },
         convertCSVData: function (_file, _callback) {
 
             self = this;
 
-            if (listData.length) {
+            /*if (listData.length) {
                 _callback(listData);
                 return;
-            }
-
+            }*/
             fs.createReadStream(_file)
                 .pipe(stream)
                 .on('data', function (data) {
                     var arr = data.Date.split('/'),
                         dateObj = new Date(arr[2], arr[1] - 1, arr[0]);
+
                     data.sortDate = dateObj;
+                    data.Reference = data.Reference.split(' ')[1];
                     json.push(data);
                 })
                 .on('end', function (data) {
                     listData = self.sortDate(json);
-                    _callback(listData);
-
+                    _callback(JSON.stringify({
+                        account: listData
+                    }, null, 4));
+                    //console.log(listData);
                     /*self.writeJsonFile(
                      JSON.stringify({
                      account: listData
