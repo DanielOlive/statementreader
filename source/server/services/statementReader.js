@@ -10,7 +10,7 @@ var csv = require('csv-parser'),
     self,
     json = [],
     check = /(LONDON|PAYMENT RECEIVED)/,
-    stream = csv({
+    csvStream = csv({
         raw: false,     // do not decode to utf-8 strings
         separator: ',', // specify optional cell separator
         quote: '"',     // specify optional quote character
@@ -22,37 +22,47 @@ var csv = require('csv-parser'),
 module.exports = function () {
 
     return {
-        importCsvFile:function(_file, _callback){
+        importCSVFile: function (_file, _callback) {
 
-        var csvData = null;
-        self=this;
+            var csvData = null;
+            self = this;
 
-        self.convertCSVData(_file, function(data){
-            csvData = data;
-            self.getJsonFile(function(jsonData){
-                self.mergedata(jsonData, csvData);
-            })
-        });
-            console.log('importing file');
+            self.convertCSVData(_file, function (data) {
+                csvData = data;
+                self.getJsonFile(function (jsonData) {
+                    console.log('importing file');
+                    self.mergedata(jsonData, csvData);
+                })
+            });
+
 
         },
-        mergedata:function(_old, _new){
+        mergedata: function (_old, _new) {
+            var obj = {};
+
             _new = JSON.parse(_new);
 
-            //var combindData = _.union(_new, _old);
-            var combindData = _.uniq(_.union(_old.account,_new.account), false, function(item, key, Reference){ return item.Reference; });
-                //console.log(combindData);
+            obj.account = _.uniq(_.union(_old.account, _new.account), false, function (item, key, Reference) {
+                return item.Reference;
+            });
+
+            if (_.isEmpty(_old)) {
+                console.log('exisits');
+                _old.account = obj.account;
+                self.writeJsonFile(obj);
+            } else {
+                console.log('does note exist');
+                self.writeJsonFile(obj);
+            }
+
+
         },
         convertCSVData: function (_file, _callback) {
 
             self = this;
 
-            /*if (listData.length) {
-                _callback(listData);
-                return;
-            }*/
-            fs.createReadStream(_file)
-                .pipe(stream)
+             fs.createReadStream(_file)
+                .pipe(csvStream)
                 .on('data', function (data) {
                     var arr = data.Date.split('/'),
                         dateObj = new Date(arr[2], arr[1] - 1, arr[0]);
@@ -61,54 +71,47 @@ module.exports = function () {
                     data.Reference = data.Reference.split(' ')[1];
                     json.push(data);
                 })
+                .on('error', (err) => console.log('ERROR: Cannot convert CSV Data', err))
                 .on('end', function (data) {
                     listData = self.sortDate(json);
                     _callback(JSON.stringify({
                         account: listData
                     }, null, 4));
-                    //console.log(listData);
-                    /*self.writeJsonFile(
-                     JSON.stringify({
-                     account: listData
-                     }, null, 4));*/
                 });
-
-            //TODO:create an error handler too
-
         },
 
         /*
-                loadData: function (_file, _callback) {
+         loadData: function (_file, _callback) {
 
-                    self = this;
+         self = this;
 
-                    if (listData.length) {
-                        _callback(listData);
-                        return;
-                    }
+         if (listData.length) {
+         _callback(listData);
+         return;
+         }
 
-                    fs.createReadStream(_file)
-                        .pipe(stream)
-                        .on('data', function (data) {
-                            var arr = data.Date.split('/'),
-                                dateObj = new Date(arr[2], arr[1] - 1, arr[0]);
-                            data.sortDate = dateObj;
-                            json.push(data);
-                        })
-                        .on('end', function (data) {
-                            listData = self.sortDate(json);
-                            _callback(listData);
+         fs.createReadStream(_file)
+         .pipe(stream)
+         .on('data', function (data) {
+         var arr = data.Date.split('/'),
+         dateObj = new Date(arr[2], arr[1] - 1, arr[0]);
+         data.sortDate = dateObj;
+         json.push(data);
+         })
+         .on('end', function (data) {
+         listData = self.sortDate(json);
+         _callback(listData);
 
-                            /!*self.writeJsonFile(
-                                JSON.stringify({
-                                    account: listData
-                                }, null, 4));*!/
-                        });
+         /!*self.writeJsonFile(
+         JSON.stringify({
+         account: listData
+         }, null, 4));*!/
+         });
 
-                    //TODO:create an error handler too
+         //TODO:create an error handler too
 
-                },
-        */
+         },
+         */
         sortDate: function (data) {
 
             var sortedData = _.sortBy(data, function (o) {
@@ -129,8 +132,8 @@ module.exports = function () {
         },
         writeJsonFile: function (data) {
             console.log('write');
-            fs.writeFile(config.database, data, (err) => {
-                if (err) throw err;
+            fs.writeFile(config.database, JSON.stringify(data, null, 4), (err) => {
+                if (err) console.log('ERROR: Writing data to JSON file');
                 console.log('It\'s saved!');
             });
         },
@@ -138,15 +141,14 @@ module.exports = function () {
 
             fs.stat(config.database, (err, res) => {
 
-                if (err) {
-                    console.log('Please Import a data file');
-                } else {
 
-                    //loadfile
+                if (err) {
+                    console.log('ERROR: Please Import a data file');
+                    _callback({});
+                } else {
                     console.log('load file');
                     fs.readFile(config.database, 'UTF8', (err, data) => {
                         if (err) throw err;
-                        //console.log(data)
                         _callback(JSON.parse(data));
                     });
                 }

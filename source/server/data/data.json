@@ -1,168 +1,128 @@
 {
     "account": [
         {
-            "Date": "21/04/2016",
-            "Reference": "Reference: AT161140010000010055810",
-            "Amount": " 41.10",
-            "Retailer": "HOGSHEAD - TURF TAVERN OXFORD",
-            "ProcessDate": " Process Date 22/04/2016",
-            "sortDate": "2016-04-20T23:00:00.000Z"
+            "Date": "19/06/2016",
+            "Reference": "AT161720029000010084762",
+            "Amount": " 34.87",
+            "Retailer": "TESCO STORES 3235 SUTTON",
+            "ProcessDate": " Process Date 20/06/2016",
+            "sortDate": "2016-06-18T23:00:00.000Z"
         },
         {
-            "Date": "21/04/2016",
-            "Reference": "Reference: AT161130025000010097685",
-            "Amount": " 3.40",
-            "Retailer": "TESCO SELF SERVICE OXFORD",
-            "ProcessDate": " Process Date 22/04/2016",
-            "sortDate": "2016-04-20T23:00:00.000Z"
+            "Date": "23/06/2016",
+            "Reference": "AT161760019000010060290",
+            "Amount": " 3.95",
+            "Retailer": "COSTA COFFEE - CHEAM SURREY",
+            "ProcessDate": " Process Date 23/06/2016",
+            "sortDate": "2016-06-22T23:00:00.000Z"
         },
         {
-            "Date": "21/04/2016",
-            "Reference": "Reference: AT161130025000010097684",
-            "Amount": " 1.31",
-            "Retailer": "TESCO STORES 6167 OXFORD",
-            "ProcessDate": " Process Date 22/04/2016",
-            "sortDate": "2016-04-20T23:00:00.000Z"
+            "Date": "24/06/2016",
+            "Reference": "AT161770007000010070035",
+            "Amount": " 18.50",
+            "Retailer": "SUSHI TAMA SUTTON",
+            "ProcessDate": " Process Date 24/06/2016",
+            "sortDate": "2016-06-23T23:00:00.000Z"
         },
         {
-            "Date": "22/04/2016",
-            "Reference": "Reference: AT161160019000010095706",
-            "Amount": " 184.10",
-            "Retailer": "MERCURE OXFORD EASTGATE OXFORD",
-            "ProcessDate": "MERCHANDISE Process Date 25/04/2016  MERCHANDISE",
-            "sortDate": "2016-04-21T23:00:00.000Z"
+            "Date": "27/06/2016",
+            "Reference": "AT161800019000010079245",
+            "Amount": " 56.80",
+            "Retailer": "BEST WESTERN ANGLO SWIS BOURNEMOUTH",
+            "ProcessDate": "GOODS OR SERVICES Process Date 27/06/2016  GOODS OR SERVICES",
+            "sortDate": "2016-06-26T23:00:00.000Z"
         },
         {
-            "Date": "22/04/2016",
-            "Reference": "Reference: AT161140010000010063603",
-            "Amount": " 41.75",
-            "Retailer": "Shell 052015 Shell Head Oxford",
-            "ProcessDate": " Process Date 22/04/2016",
-            "sortDate": "2016-04-21T23:00:00.000Z"
+            "Date": "27/06/2016",
+            "Reference": "AT161800019000010097878",
+            "Amount": " 3.90",
+            "Retailer": "COSTA BOURNEMOUTH OLD C BOURNEMOUTH",
+            "ProcessDate": "HOSPITALITY-GOODS-SERVICES Process Date 28/06/2016  HOSPITALITY-GOODS-SERVICES",
+            "sortDate": "2016-06-26T23:00:00.000Z"
         },
         {
-            "Date": "27/04/2016",
-            "Reference": "Reference: AT161190019000010079309",
-            "Amount": " 24.99",
-            "Retailer": "AMAZON SVCS EUROPE,SAR AMAZON.CO.UK",
-            "ProcessDate": " Process Date 27/04/2016",
-            "sortDate": "2016-04-26T23:00:00.000Z"
+            "Date": "27/06/2016",
+            "Reference": "AT161800019000010093923",
+            "Amount": " 1.84",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 28/06/2016",
+            "sortDate": "2016-06-26T23:00:00.000Z"
         },
         {
-            "Date": "30/04/2016",
-            "Reference": "Reference: AT161220010000010061749",
-            "Amount": " 9.57",
-            "Retailer": "BOOTS THE CHEMIST GATWICK",
-            "ProcessDate": "MERCHANDISE Process Date 30/04/2016  MERCHANDISE",
-            "sortDate": "2016-04-29T23:00:00.000Z"
+            "Date": "27/06/2016",
+            "Reference": "AT161800019000010066512",
+            "Amount": " 20.16",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "559 Cheam SCO Process Date 27/06/2016  559 Cheam SCO",
+            "sortDate": "2016-06-26T23:00:00.000Z"
         },
         {
-            "Date": "30/04/2016",
-            "Reference": "Reference: AT161220010000010084953",
-            "Amount": " 41.40",
-            "Retailer": "JAMIES ITALIAN GATWICK GATWICK",
-            "ProcessDate": "GOODS OR SERVICES Process Date 30/04/2016  GOODS OR SERVICES",
-            "sortDate": "2016-04-29T23:00:00.000Z"
+            "Date": "27/06/2016",
+            "Reference": "AT161800019000010050451",
+            "Amount": " 1.00",
+            "Retailer": "WILKINSON BOURNEMOUTH BOURNEMOUTH",
+            "ProcessDate": "GOODS Process Date 27/06/2016  GOODS",
+            "sortDate": "2016-06-26T23:00:00.000Z"
         },
         {
-            "Date": "30/04/2016",
-            "Reference": "Reference: AT161220010000010073031",
-            "Amount": " 353.40",
-            "Retailer": "ONE CALL INSURANCE SERV DONCASTER",
-            "ProcessDate": "na Process Date 30/04/2016  na",
-            "sortDate": "2016-04-29T23:00:00.000Z"
+            "Date": "28/06/2016",
+            "Reference": "AT161810015000010053009",
+            "Amount": " 212.50",
+            "Retailer": "DVLA AMEX VEHICLE TAX W SWANSEA",
+            "ProcessDate": "GOODS AND SERVICES Process Date 28/06/2016  GOODS AND SERVICES",
+            "sortDate": "2016-06-27T23:00:00.000Z"
         },
         {
-            "Date": "30/04/2016",
-            "Reference": "Reference: AT161220010000010057029",
-            "Amount": " 5.49",
-            "Retailer": "PRET A MANGER GATWICK AIRPORT",
-            "ProcessDate": " Process Date 30/04/2016",
-            "sortDate": "2016-04-29T23:00:00.000Z"
-        },
-        {
-            "Date": "02/05/2016",
-            "Reference": "Reference: AT161240019000010067840",
-            "Amount": " 221.13",
-            "Retailer": "GEANT CASINO GASSIN",
-            "ProcessDate": "273,76 EUR COMM.FEE 6.42 Process Date 02/05/2016 Currency Conversion Rate 1.275 Commission Amount 6.42",
-            "sortDate": "2016-05-01T23:00:00.000Z"
-        },
-        {
-            "Date": "02/05/2016",
-            "Reference": "Reference: AT161240019000010103995",
-            "Amount": " 10.30",
-            "Retailer": "GRO INFLIGHT SHOP LUTON",
-            "ProcessDate": " Process Date 03/05/2016",
-            "sortDate": "2016-05-01T23:00:00.000Z"
-        },
-        {
-            "Date": "14/05/2016",
-            "Reference": "Reference: AT161370017000010098867",
-            "Amount": " 240.97",
-            "Retailer": "EUROPCAR FRANCE ST QUENTIN YVEL",
-            "ProcessDate": "296,51 EUR COMM.FEE 7.00 Process Date 16/05/2016 Currency Conversion Rate 1.2672 Commission Amount 7.00",
-            "sortDate": "2016-05-13T23:00:00.000Z"
-        },
-        {
-            "Date": "15/05/2016",
-            "Reference": "Reference: AT161370017000010079243",
-            "Amount": " 19.99",
-            "Retailer": "AMAZON UK RETAIL AMAZON.CO.UK",
-            "ProcessDate": " Process Date 15/05/2016",
-            "sortDate": "2016-05-14T23:00:00.000Z"
-        },
-        {
-            "Date": "15/05/2016",
-            "Reference": "Reference: AT161370017000010058349",
-            "Amount": " 18.55",
-            "Retailer": "SAINSBURY'S SPRMRKTS LT SUTTON",
-            "ProcessDate": " Process Date 15/05/2016",
-            "sortDate": "2016-05-14T23:00:00.000Z"
-        },
-        {
-            "Date": "16/05/2016",
-            "Reference": "Reference: AT161370069000010004804",
-            "Amount": " 2.10",
+            "Date": "29/06/2016",
+            "Reference": "AT161810044000010003550",
+            "Amount": " 6.15",
             "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
-            "ProcessDate": " Process Date 16/05/2016",
-            "sortDate": "2016-05-15T23:00:00.000Z"
+            "ProcessDate": " Process Date 29/06/2016",
+            "sortDate": "2016-06-28T23:00:00.000Z"
         },
         {
-            "Date": "16/05/2016",
-            "Reference": "Reference: AT161370069000010004906",
-            "Amount": " 12.99",
-            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
-            "ProcessDate": " Process Date 16/05/2016",
-            "sortDate": "2016-05-15T23:00:00.000Z"
+            "Date": "29/06/2016",
+            "Reference": "AT161820015000010057072",
+            "Amount": " 3.00",
+            "Retailer": "SAINSBURY'S SUPERMARKET MORDEN",
+            "ProcessDate": " Process Date 29/06/2016",
+            "sortDate": "2016-06-28T23:00:00.000Z"
         },
         {
-            "Date": "16/05/2016",
-            "Reference": "Reference: AT161370069000010007332",
-            "Amount": " 2.20",
-            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
-            "ProcessDate": " Process Date 16/05/2016",
-            "sortDate": "2016-05-15T23:00:00.000Z"
+            "Date": "01/07/2016",
+            "Reference": "AT161840008000010092094",
+            "Amount": " 52.97",
+            "Retailer": "TESCO PETROL FILLING ST SUTTON",
+            "ProcessDate": " Process Date 02/07/2016",
+            "sortDate": "2016-06-30T23:00:00.000Z"
         },
         {
-            "Date": "17/05/2016",
-            "Reference": "Reference: AT161390017000010084257",
-            "Amount": " 6.99",
-            "Retailer": "AMAZON UK RETAIL AMAZON.CO.UK",
-            "ProcessDate": " Process Date 17/05/2016",
-            "sortDate": "2016-05-16T23:00:00.000Z"
+            "Date": "02/07/2016",
+            "Reference": "AT161850008000010053258",
+            "Amount": " 25.45",
+            "Retailer": "WILKINSON SUTTON-IN-SUR SUTTON IN SURRE",
+            "ProcessDate": "GOODS Process Date 02/07/2016  GOODS",
+            "sortDate": "2016-07-01T23:00:00.000Z"
         },
         {
-            "Date": "17/05/2016",
-            "Reference": "Reference: AT161390017000010082552",
-            "Amount": " 8.48",
-            "Retailer": "PREZZO SUTTON",
-            "ProcessDate": "3262 - Prezzo CHEAM Process Date 17/05/2016  3262 - Prezzo CHEAM",
-            "sortDate": "2016-05-16T23:00:00.000Z"
+            "Date": "03/07/2016",
+            "Reference": "AT161860015000010049896",
+            "Amount": " 11.20",
+            "Retailer": "WILKINSON SUTTON-IN-SUR SUTTON IN SURRE",
+            "ProcessDate": "GOODS Process Date 03/07/2016  GOODS",
+            "sortDate": "2016-07-02T23:00:00.000Z"
+        },
+        {
+            "Date": "03/07/2016",
+            "Reference": "AT161860015000010076594",
+            "Amount": " 34.83",
+            "Retailer": "WM MORRISONS STORES SUTTON",
+            "ProcessDate": " Process Date 03/07/2016",
+            "sortDate": "2016-07-02T23:00:00.000Z"
         },
         {
             "Date": "20/05/2016",
-            "Reference": "Reference: AT161420010000010068965",
+            "Reference": "AT161420010000010068965",
             "Amount": " 12.77",
             "Retailer": "WAITROSE CHEAM SUTTON",
             "ProcessDate": "559 Cheam SCO Process Date 20/05/2016  559 Cheam SCO",
@@ -170,7 +130,7 @@
         },
         {
             "Date": "21/05/2016",
-            "Reference": "Reference: AT161430007000010083619",
+            "Reference": "AT161430007000010083619",
             "Amount": " 32.10",
             "Retailer": "PIZZAEXPRESS RESTAURANT SUTTON",
             "ProcessDate": "PizzaExpress - 3286 - Cheam Process Date 21/05/2016  PizzaExpress - 3286 - Cheam",
@@ -178,7 +138,7 @@
         },
         {
             "Date": "21/05/2016",
-            "Reference": "Reference: AT161430007000010091024",
+            "Reference": "AT161430007000010091024",
             "Amount": " 5.50",
             "Retailer": "TESCO STORES 2259 SUTTON",
             "ProcessDate": " Process Date 22/05/2016",
@@ -186,7 +146,7 @@
         },
         {
             "Date": "22/05/2016",
-            "Reference": "Reference: AT161440011000010061029",
+            "Reference": "AT161440011000010061029",
             "Amount": " 5.75",
             "Retailer": "COSTA COFFEE - CHEAM SURREY",
             "ProcessDate": " Process Date 22/05/2016",
@@ -194,7 +154,7 @@
         },
         {
             "Date": "22/05/2016",
-            "Reference": "Reference: AT161440011000010076943",
+            "Reference": "AT161440011000010076943",
             "Amount": " 4.50",
             "Retailer": "DAVID LLOYD LEISURE SUTTON",
             "ProcessDate": " Process Date 22/05/2016",
@@ -202,7 +162,7 @@
         },
         {
             "Date": "22/05/2016",
-            "Reference": "Reference: AT161440011000010088491",
+            "Reference": "AT161440011000010088491",
             "Amount": " 2.50",
             "Retailer": "TESCO STORES 2259 SUTTON",
             "ProcessDate": " Process Date 23/05/2016",
@@ -210,7 +170,7 @@
         },
         {
             "Date": "22/05/2016",
-            "Reference": "Reference: AT161440011000010068705",
+            "Reference": "AT161440011000010068705",
             "Amount": " 21.11",
             "Retailer": "WAITROSE CHEAM SUTTON",
             "ProcessDate": "559 Cheam Process Date 22/05/2016  559 Cheam",
@@ -218,7 +178,7 @@
         },
         {
             "Date": "26/05/2016",
-            "Reference": "Reference: AT161480013000010059178",
+            "Reference": "AT161480013000010059178",
             "Amount": " 8.05",
             "Retailer": "SAINSBURY'S SUPERMARKET SUTTON",
             "ProcessDate": " Process Date 26/05/2016",
@@ -226,7 +186,7 @@
         },
         {
             "Date": "26/05/2016",
-            "Reference": "Reference: AT161480013000010079375",
+            "Reference": "AT161480013000010079375",
             "Amount": " 14.50",
             "Retailer": "SUSHI TAMA SUTTON",
             "ProcessDate": " Process Date 26/05/2016",
@@ -234,7 +194,7 @@
         },
         {
             "Date": "27/05/2016",
-            "Reference": "Reference: AT161480047000010004904",
+            "Reference": "AT161480047000010004904",
             "Amount": " 3.75",
             "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
             "ProcessDate": " Process Date 27/05/2016",
@@ -242,7 +202,7 @@
         },
         {
             "Date": "27/05/2016",
-            "Reference": "Reference: AT161480047000010004405",
+            "Reference": "AT161480047000010004405",
             "Amount": " 5.99",
             "Retailer": "AMAZON UK RETAIL AMAZON.CO.UK",
             "ProcessDate": " Process Date 27/05/2016",
@@ -250,7 +210,7 @@
         },
         {
             "Date": "29/05/2016",
-            "Reference": "Reference: AT161510008000010071094",
+            "Reference": "AT161510008000010071094",
             "Amount": " 12.00",
             "Retailer": "TESCO STORES 2259 SUTTON",
             "ProcessDate": " Process Date 30/05/2016",
@@ -258,7 +218,7 @@
         },
         {
             "Date": "30/05/2016",
-            "Reference": "Reference: AT161510060000010004406",
+            "Reference": "AT161510060000010004406",
             "Amount": " 17.64",
             "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
             "ProcessDate": " Process Date 30/05/2016",
@@ -266,7 +226,7 @@
         },
         {
             "Date": "30/05/2016",
-            "Reference": "Reference: AT161520023000010071263",
+            "Reference": "AT161520023000010071263",
             "Amount": " 28.10",
             "Retailer": "WAITROSE CHEAM SUTTON",
             "ProcessDate": "559 Cheam SCO Process Date 30/05/2016  559 Cheam SCO",
@@ -274,7 +234,7 @@
         },
         {
             "Date": "01/06/2016",
-            "Reference": "Reference: AT161540015000010082945",
+            "Reference": "AT161540015000010082945",
             "Amount": " 17.38",
             "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
             "ProcessDate": " Process Date 01/06/2016",
@@ -282,7 +242,7 @@
         },
         {
             "Date": "01/06/2016",
-            "Reference": "Reference: AT161540015000010083833",
+            "Reference": "AT161540015000010083833",
             "Amount": " 11.99",
             "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
             "ProcessDate": " Process Date 01/06/2016",
@@ -290,7 +250,7 @@
         },
         {
             "Date": "01/06/2016",
-            "Reference": "Reference: AT161540015000010090281",
+            "Reference": "AT161540015000010090281",
             "Amount": " 3.15",
             "Retailer": "TESCO STORES 2259 SUTTON",
             "ProcessDate": " Process Date 02/06/2016",
@@ -298,7 +258,7 @@
         },
         {
             "Date": "02/06/2016",
-            "Reference": "Reference: AT161550013000010096979",
+            "Reference": "AT161550013000010096979",
             "Amount": " 6.00",
             "Retailer": "TESCO STORES 2259 SUTTON",
             "ProcessDate": " Process Date 03/06/2016",
@@ -306,7 +266,7 @@
         },
         {
             "Date": "03/06/2016",
-            "Reference": "Reference: AT161560008000010063952",
+            "Reference": "AT161560008000010063952",
             "Amount": " 2.19",
             "Retailer": "WAITROSE CHEAM SUTTON",
             "ProcessDate": "559 Cheam SCO Process Date 03/06/2016  559 Cheam SCO",
@@ -314,7 +274,7 @@
         },
         {
             "Date": "04/06/2016",
-            "Reference": "Reference: AT161570008000010092483",
+            "Reference": "AT161570008000010092483",
             "Amount": " 16.50",
             "Retailer": "SUSHI TAMA SUTTON",
             "ProcessDate": " Process Date 04/06/2016",
@@ -322,7 +282,7 @@
         },
         {
             "Date": "05/06/2016",
-            "Reference": "Reference: AT161580017000010057317",
+            "Reference": "AT161580017000010057317",
             "Amount": " 17.95",
             "Retailer": "SAINSBURY'S SUPERMARKET SUTTON",
             "ProcessDate": " Process Date 05/06/2016",
@@ -330,11 +290,1011 @@
         },
         {
             "Date": "05/06/2016",
-            "Reference": "Reference: AT161580017000010091622",
+            "Reference": "AT161580017000010091622",
             "Amount": " 22.62",
             "Retailer": "TESCO STORES 2259 SUTTON",
             "ProcessDate": " Process Date 06/06/2016",
             "sortDate": "2016-06-04T23:00:00.000Z"
+        },
+        {
+            "Date": "09/06/2016",
+            "Reference": "AT161620013000010083950",
+            "Amount": " 9.95",
+            "Retailer": "AMAZON UK RETAIL AMAZON.CO.UK",
+            "ProcessDate": " Process Date 09/06/2016",
+            "sortDate": "2016-06-08T23:00:00.000Z"
+        },
+        {
+            "Date": "10/06/2016",
+            "Reference": "AT161620049000010004946",
+            "Amount": " 3.99",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 10/06/2016",
+            "sortDate": "2016-06-09T23:00:00.000Z"
+        },
+        {
+            "Date": "11/06/2016",
+            "Reference": "AT161640007000010078006",
+            "Amount": " 78.09",
+            "Retailer": "YE OLDE RED LION SUTTO SUTTON",
+            "ProcessDate": " Process Date 11/06/2016",
+            "sortDate": "2016-06-10T23:00:00.000Z"
+        },
+        {
+            "Date": "11/06/2016",
+            "Reference": "AT161640007000010071768",
+            "Amount": " 3.87",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 11/06/2016",
+            "sortDate": "2016-06-10T23:00:00.000Z"
+        },
+        {
+            "Date": "12/06/2016",
+            "Reference": "AT161650019000010063882",
+            "Amount": " 8.48",
+            "Retailer": "SUTTON WICKES SUTTON",
+            "ProcessDate": "Wickes - 8482 Sutton Process Date 12/06/2016  Wickes - 8482 Sutton",
+            "sortDate": "2016-06-11T23:00:00.000Z"
+        },
+        {
+            "Date": "12/06/2016",
+            "Reference": "AT161650019000010081778",
+            "Amount": " 55.61",
+            "Retailer": "TESCO PETROL FILLING ST SUTTON",
+            "ProcessDate": " Process Date 13/06/2016",
+            "sortDate": "2016-06-11T23:00:00.000Z"
+        },
+        {
+            "Date": "12/06/2016",
+            "Reference": "AT161650019000010082174",
+            "Amount": " 67.86",
+            "Retailer": "TESCO STORES 3235 SUTTON",
+            "ProcessDate": " Process Date 13/06/2016",
+            "sortDate": "2016-06-11T23:00:00.000Z"
+        },
+        {
+            "Date": "13/06/2016",
+            "Reference": "AT161660017000010095866",
+            "Amount": " 18.36",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 14/06/2016",
+            "sortDate": "2016-06-12T23:00:00.000Z"
+        },
+        {
+            "Date": "15/06/2016",
+            "Reference": "AT161670065000010007553",
+            "Amount": " 5.59",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 15/06/2016",
+            "sortDate": "2016-06-14T23:00:00.000Z"
+        },
+        {
+            "Date": "15/06/2016",
+            "Reference": "AT161680013000010064640",
+            "Amount": " 31.29",
+            "Retailer": "HOMEBASE LTD EPSOM",
+            "ProcessDate": " Process Date 15/06/2016",
+            "sortDate": "2016-06-14T23:00:00.000Z"
+        },
+        {
+            "Date": "18/06/2016",
+            "Reference": "AT161710008000010072418",
+            "Amount": " 15.45",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 18/06/2016",
+            "sortDate": "2016-06-17T23:00:00.000Z"
+        },
+        {
+            "Date": "18/06/2016",
+            "Reference": "AT161710008000010086161",
+            "Amount": " 3.67",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 19/06/2016",
+            "sortDate": "2016-06-17T23:00:00.000Z"
+        },
+        {
+            "Date": "18/06/2016",
+            "Reference": "AT161710008000010086162",
+            "Amount": " 9.00",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 19/06/2016",
+            "sortDate": "2016-06-17T23:00:00.000Z"
+        },
+        {
+            "Date": "18/06/2016",
+            "Reference": "AT161710008000010064715",
+            "Amount": " 8.32",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "559 Cheam SCO Process Date 18/06/2016  559 Cheam SCO",
+            "sortDate": "2016-06-17T23:00:00.000Z"
+        },
+        {
+            "Date": "19/06/2015",
+            "Reference": "AT151710006000010094698",
+            "Amount": " 3.05",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 20/06/2015",
+            "sortDate": "2015-06-18T23:00:00.000Z"
+        },
+        {
+            "Date": "19/06/2015",
+            "Reference": "AT151710006000010073369",
+            "Amount": " 2.88",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 19/06/2015  GENERAL GOODS",
+            "sortDate": "2015-06-18T23:00:00.000Z"
+        },
+        {
+            "Date": "20/06/2015",
+            "Reference": "AT151720005000010056645",
+            "Amount": " 13.63",
+            "Retailer": "SAINSBURY'S SUPERMARKET SUTTON",
+            "ProcessDate": " Process Date 20/06/2015",
+            "sortDate": "2015-06-19T23:00:00.000Z"
+        },
+        {
+            "Date": "20/06/2015",
+            "Reference": "AT151720005000010092258",
+            "Amount": " 21.89",
+            "Retailer": "TESCO SELF SERVICE SUTTON",
+            "ProcessDate": " Process Date 21/06/2015",
+            "sortDate": "2015-06-19T23:00:00.000Z"
+        },
+        {
+            "Date": "21/06/2015",
+            "Reference": "AT151730018000010070610",
+            "Amount": " 7.58",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 21/06/2015  GENERAL GOODS",
+            "sortDate": "2015-06-20T23:00:00.000Z"
+        },
+        {
+            "Date": "23/06/2015",
+            "Reference": "AT151750021000010080341",
+            "Amount": " 28.00",
+            "Retailer": "SUSHI TAMA SUTTON",
+            "ProcessDate": " Process Date 23/06/2015",
+            "sortDate": "2015-06-22T23:00:00.000Z"
+        },
+        {
+            "Date": "24/06/2015",
+            "Reference": "AT151760013000010093330",
+            "Amount": " 10.00",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 25/06/2015",
+            "sortDate": "2015-06-23T23:00:00.000Z"
+        },
+        {
+            "Date": "25/06/2015",
+            "Reference": "AT151770019000010094452",
+            "Amount": " 0.79",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 26/06/2015",
+            "sortDate": "2015-06-24T23:00:00.000Z"
+        },
+        {
+            "Date": "25/06/2015",
+            "Reference": "AT151770019000010073237",
+            "Amount": " 1.73",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 25/06/2015  GENERAL GOODS",
+            "sortDate": "2015-06-24T23:00:00.000Z"
+        },
+        {
+            "Date": "26/06/2015",
+            "Reference": "AT151780006000010071304",
+            "Amount": " 12.51",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 26/06/2015  GENERAL GOODS",
+            "sortDate": "2015-06-25T23:00:00.000Z"
+        },
+        {
+            "Date": "27/06/2015",
+            "Reference": "AT151790006000010069119",
+            "Amount": " 7.36",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 27/06/2015  GENERAL GOODS",
+            "sortDate": "2015-06-26T23:00:00.000Z"
+        },
+        {
+            "Date": "28/06/2015",
+            "Reference": "AT151800013000010075294",
+            "Amount": " 27.00",
+            "Retailer": "YE OLDE RED LION SUTTO SUTTON",
+            "ProcessDate": " Process Date 28/06/2015",
+            "sortDate": "2015-06-27T23:00:00.000Z"
+        },
+        {
+            "Date": "28/06/2015",
+            "Reference": "AT151800013000010094252",
+            "Amount": " 52.90",
+            "Retailer": "TESCO PETROL FILLING ST SUTTON",
+            "ProcessDate": " Process Date 29/06/2015",
+            "sortDate": "2015-06-27T23:00:00.000Z"
+        },
+        {
+            "Date": "30/06/2015",
+            "Reference": "AT151820017000010054546",
+            "Amount": " 7.00",
+            "Retailer": "SAINSBURY'S SPRMRKTS LT SUTTON",
+            "ProcessDate": " Process Date 30/06/2015",
+            "sortDate": "2015-06-29T23:00:00.000Z"
+        },
+        {
+            "Date": "01/07/2015",
+            "Reference": "AT151830030000010073272",
+            "Amount": " 2.88",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 01/07/2015  GENERAL GOODS",
+            "sortDate": "2015-06-30T23:00:00.000Z"
+        },
+        {
+            "Date": "04/07/2015",
+            "Reference": "AT151860006000010084061",
+            "Amount": " 25.00",
+            "Retailer": "NOCHEX LTD LEEDS",
+            "ProcessDate": "Moneyworld.com Process Date 04/07/2015  Moneyworld.com",
+            "sortDate": "2015-07-03T23:00:00.000Z"
+        },
+        {
+            "Date": "04/07/2015",
+            "Reference": "AT151860006000010051914",
+            "Amount": " 4.20",
+            "Retailer": "SAINSBURY'S SPRMRKTS LT SUTTON",
+            "ProcessDate": " Process Date 04/07/2015",
+            "sortDate": "2015-07-03T23:00:00.000Z"
+        },
+        {
+            "Date": "05/07/2015",
+            "Reference": "AT151870015000010071079",
+            "Amount": " 18.45",
+            "Retailer": "PIZZAEXPRESS RESTAURANT SUTTON",
+            "ProcessDate": "PizzaExpress - 3286 - Cheam Process Date 05/07/2015  PizzaExpress - 3286 - Cheam",
+            "sortDate": "2015-07-04T23:00:00.000Z"
+        },
+        {
+            "Date": "05/07/2015",
+            "Reference": "AT151870015000010068080",
+            "Amount": " 1.58",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 05/07/2015  GENERAL GOODS",
+            "sortDate": "2015-07-04T23:00:00.000Z"
+        },
+        {
+            "Date": "06/07/2015",
+            "Reference": "AT151880015000010075539",
+            "Amount": " 9.93",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 06/07/2015  GENERAL GOODS",
+            "sortDate": "2015-07-05T23:00:00.000Z"
+        },
+        {
+            "Date": "08/07/2015",
+            "Reference": "AT151900017000010094411",
+            "Amount": " 2.40",
+            "Retailer": "COSTA WORCESTER PARK WORCESTER PARK",
+            "ProcessDate": "HOSPITALITY-GOODS-SERVICES Process Date 09/07/2015  HOSPITALITY-GOODS-SERVICES",
+            "sortDate": "2015-07-07T23:00:00.000Z"
+        },
+        {
+            "Date": "09/07/2015",
+            "Reference": "AT151910011000010070773",
+            "Amount": " 2.19",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 09/07/2015  GENERAL GOODS",
+            "sortDate": "2015-07-08T23:00:00.000Z"
+        },
+        {
+            "Date": "10/07/2015",
+            "Reference": "AT151920006000010076304",
+            "Amount": " 7.99",
+            "Retailer": "AMAZON SVCS EUROPE,SAR AMAZON.CO.UK",
+            "ProcessDate": " Process Date 10/07/2015",
+            "sortDate": "2015-07-09T23:00:00.000Z"
+        },
+        {
+            "Date": "10/07/2015",
+            "Reference": "AT151910011000010103406",
+            "Amount": " 1.68",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 10/07/2015",
+            "sortDate": "2015-07-09T23:00:00.000Z"
+        },
+        {
+            "Date": "10/07/2015",
+            "Reference": "AT151920006000010076318",
+            "Amount": " 12.99",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 10/07/2015",
+            "sortDate": "2015-07-09T23:00:00.000Z"
+        },
+        {
+            "Date": "10/07/2015",
+            "Reference": "AT151920006000010076328",
+            "Amount": " 22.79",
+            "Retailer": "AMAZON UK RETAIL AMAZON.CO.UK",
+            "ProcessDate": " Process Date 10/07/2015",
+            "sortDate": "2015-07-09T23:00:00.000Z"
+        },
+        {
+            "Date": "10/07/2015",
+            "Reference": "AT151920006000010073636",
+            "Amount": " 2.19",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 10/07/2015  GENERAL GOODS",
+            "sortDate": "2015-07-09T23:00:00.000Z"
+        },
+        {
+            "Date": "11/07/2015",
+            "Reference": "AT151940013000010063023",
+            "Amount": " 216.86",
+            "Retailer": "BT PLUSNET PLC SHEFFIELD",
+            "ProcessDate": " Process Date 12/07/2015",
+            "sortDate": "2015-07-10T23:00:00.000Z"
+        },
+        {
+            "Date": "11/07/2015",
+            "Reference": "AT151930006000010069039",
+            "Amount": " 10.44",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 11/07/2015  GENERAL GOODS",
+            "sortDate": "2015-07-10T23:00:00.000Z"
+        },
+        {
+            "Date": "12/07/2015",
+            "Reference": "AT151940013000010068435",
+            "Amount": " 3.32",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 12/07/2015  GENERAL GOODS",
+            "sortDate": "2015-07-11T23:00:00.000Z"
+        },
+        {
+            "Date": "13/07/2015",
+            "Reference": "AT151950015000010069291",
+            "Amount": " 7.08",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 13/07/2015  GENERAL GOODS",
+            "sortDate": "2015-07-12T23:00:00.000Z"
+        },
+        {
+            "Date": "14/07/2015",
+            "Reference": "AT151960019000010070408",
+            "Amount": " 3.57",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 14/07/2015  GENERAL GOODS",
+            "sortDate": "2015-07-13T23:00:00.000Z"
+        },
+        {
+            "Date": "15/07/2015",
+            "Reference": "AT151970015000010065870",
+            "Amount": " 2.09",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 15/07/2015  GENERAL GOODS",
+            "sortDate": "2015-07-14T23:00:00.000Z"
+        },
+        {
+            "Date": "16/07/2015",
+            "Reference": "AT151980013000010072228",
+            "Amount": " 5.13",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 16/07/2015  GENERAL GOODS",
+            "sortDate": "2015-07-15T23:00:00.000Z"
+        },
+        {
+            "Date": "19/07/2015",
+            "Reference": "AT152010021000010064551",
+            "Amount": " 19.99",
+            "Retailer": "LOWER MORDEN GARDEN CEN MORDEN",
+            "ProcessDate": "GOODS Process Date 19/07/2015  GOODS",
+            "sortDate": "2015-07-18T23:00:00.000Z"
+        },
+        {
+            "Date": "19/07/2015",
+            "Reference": "AT152010021000010100987",
+            "Amount": " 34.48",
+            "Retailer": "PAYPAL *PALEONUTRIT 35314369001",
+            "ProcessDate": " Process Date 20/07/2015",
+            "sortDate": "2015-07-18T23:00:00.000Z"
+        },
+        {
+            "Date": "20/07/2015",
+            "Reference": "AT152020018000010089340",
+            "Amount": " 43.54",
+            "Retailer": "TESCO - CROYDON.COM 599 CROYDON",
+            "ProcessDate": " Process Date 21/07/2015",
+            "sortDate": "2015-07-19T23:00:00.000Z"
+        },
+        {
+            "Date": "21/07/2015",
+            "Reference": "AT152030017000010079818",
+            "Amount": " 10.41",
+            "Retailer": "AMAZON SVCS EUROPE,SAR AMAZON.CO.UK",
+            "ProcessDate": " Process Date 21/07/2015",
+            "sortDate": "2015-07-20T23:00:00.000Z"
+        },
+        {
+            "Date": "23/07/2015",
+            "Reference": "AT152050016000010088881",
+            "Amount": " 2.29",
+            "Retailer": "APPLE ITUNES STORE GBP LUXEMBOURG",
+            "ProcessDate": "INTERNET TRANSACTION Process Date 23/07/2015  INTERNET TRANSACTION",
+            "sortDate": "2015-07-22T23:00:00.000Z"
+        },
+        {
+            "Date": "23/07/2015",
+            "Reference": "AT152050016000010094065",
+            "Amount": " 2.20",
+            "Retailer": "WHISTLESTOP AND MARKS & BIRMINGHAM",
+            "ProcessDate": " Process Date 24/07/2015",
+            "sortDate": "2015-07-22T23:00:00.000Z"
+        },
+        {
+            "Date": "25/07/2015",
+            "Reference": "AT152070007000010087356",
+            "Amount": " 33.42",
+            "Retailer": "TESCO PETROL FILLING ST SUTTON",
+            "ProcessDate": " Process Date 26/07/2015",
+            "sortDate": "2015-07-24T23:00:00.000Z"
+        },
+        {
+            "Date": "25/07/2015",
+            "Reference": "AT152070007000010087229",
+            "Amount": " 13.38",
+            "Retailer": "TESCO STORES 3235 SUTTON",
+            "ProcessDate": " Process Date 26/07/2015",
+            "sortDate": "2015-07-24T23:00:00.000Z"
+        },
+        {
+            "Date": "26/07/2015",
+            "Reference": "AT152080021000010096560",
+            "Amount": " 13.30",
+            "Retailer": "PAYPAL *3XT LTD 35314369001",
+            "ProcessDate": " Process Date 27/07/2015",
+            "sortDate": "2015-07-25T23:00:00.000Z"
+        },
+        {
+            "Date": "26/07/2015",
+            "Reference": "AT152080021000010065754",
+            "Amount": " 13.61",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 26/07/2015  GENERAL GOODS",
+            "sortDate": "2015-07-25T23:00:00.000Z"
+        },
+        {
+            "Date": "27/07/2015",
+            "Reference": "AT152090015000010082007",
+            "Amount": " 31.68",
+            "Retailer": "AMAZON UK RETAIL AMAZON.CO.UK",
+            "ProcessDate": " Process Date 27/07/2015",
+            "sortDate": "2015-07-26T23:00:00.000Z"
+        },
+        {
+            "Date": "28/07/2015",
+            "Reference": "AT152100016000010083216",
+            "Amount": " 49.15",
+            "Retailer": "TESCO - CROYDON.COM 599 CROYDON",
+            "ProcessDate": " Process Date 29/07/2015",
+            "sortDate": "2015-07-27T23:00:00.000Z"
+        },
+        {
+            "Date": "30/07/2015",
+            "Reference": "AT152120013000010100902",
+            "Amount": " 58.01",
+            "Retailer": "PAYPAL *PALEONUTRIT 35314369001",
+            "ProcessDate": " Process Date 31/07/2015",
+            "sortDate": "2015-07-29T23:00:00.000Z"
+        },
+        {
+            "Date": "30/07/2015",
+            "Reference": "AT152120013000010070143",
+            "Amount": " 8.33",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "GENERAL GOODS Process Date 30/07/2015  GENERAL GOODS",
+            "sortDate": "2015-07-29T23:00:00.000Z"
+        },
+        {
+            "Date": "19/12/2015",
+            "Reference": "AT153540012000010074234",
+            "Amount": " 53.45",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "559 Cheam Process Date 19/12/2015  559 Cheam",
+            "sortDate": "2015-12-19T00:00:00.000Z"
+        },
+        {
+            "Date": "20/12/2015",
+            "Reference": "AT153560008000010074649",
+            "Amount": " 6.75",
+            "Retailer": "COSTA COFFEE - CHEAM SURREY",
+            "ProcessDate": " Process Date 20/12/2015",
+            "sortDate": "2015-12-20T00:00:00.000Z"
+        },
+        {
+            "Date": "20/12/2015",
+            "Reference": "AT153560008000010066661",
+            "Amount": " 13.65",
+            "Retailer": "SAINSBURY'S SPRMRKTS LT SUTTON",
+            "ProcessDate": " Process Date 20/12/2015",
+            "sortDate": "2015-12-20T00:00:00.000Z"
+        },
+        {
+            "Date": "20/12/2015",
+            "Reference": "AT153560008000010068429",
+            "Amount": " 9.90",
+            "Retailer": "SAINSBURY'S SUPERMARKET SUTTON",
+            "ProcessDate": " Process Date 20/12/2015",
+            "sortDate": "2015-12-20T00:00:00.000Z"
+        },
+        {
+            "Date": "21/12/2015",
+            "Reference": "AT153560015000010007264",
+            "Amount": " 115.12",
+            "Retailer": "AMAZON PRIME NOW UK 866-216-1072",
+            "ProcessDate": " Process Date 21/12/2015",
+            "sortDate": "2015-12-21T00:00:00.000Z"
+        },
+        {
+            "Date": "23/12/2015",
+            "Reference": "AT153580022000010107055",
+            "Amount": " 53.00",
+            "Retailer": "ALL BAR ONE SUTTON",
+            "ProcessDate": "DATACASH DATACASHDATACASH DATACASHDATACASH Process Date 23/12/2015  DATACASH DATACASH DATACASH DATACASH DATACASH",
+            "sortDate": "2015-12-23T00:00:00.000Z"
+        },
+        {
+            "Date": "23/12/2015",
+            "Reference": "AT153580022000010128423",
+            "Amount": " 9.99",
+            "Retailer": "PAYPAL *SPOTIFY*SPOTIFY SINGAPORE",
+            "ProcessDate": " Process Date 24/12/2015",
+            "sortDate": "2015-12-23T00:00:00.000Z"
+        },
+        {
+            "Date": "24/12/2015",
+            "Reference": "AT153580076000010002821",
+            "Amount": " 11.05",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 24/12/2015",
+            "sortDate": "2015-12-24T00:00:00.000Z"
+        },
+        {
+            "Date": "24/12/2015",
+            "Reference": "AT153590012000010078740",
+            "Amount": " 17.24",
+            "Retailer": "MAJESTIC WINE WAREHOUSE SUTTON",
+            "ProcessDate": "BUREAU Process Date 24/12/2015  BUREAU",
+            "sortDate": "2015-12-24T00:00:00.000Z"
+        },
+        {
+            "Date": "26/12/2015",
+            "Reference": "AT153610008000010027712",
+            "Amount": " 7.35",
+            "Retailer": "SAINSBURY'S SPRMRKTS LT SUTTON",
+            "ProcessDate": " Process Date 26/12/2015",
+            "sortDate": "2015-12-26T00:00:00.000Z"
+        },
+        {
+            "Date": "27/12/2015",
+            "Reference": "AT153610044000010004098",
+            "Amount": " 14.53",
+            "Retailer": "AMAZON UK RETAIL AMAZON.CO.UK",
+            "ProcessDate": " Process Date 27/12/2015",
+            "sortDate": "2015-12-27T00:00:00.000Z"
+        },
+        {
+            "Date": "28/12/2015",
+            "Reference": "AT153620012000010070520",
+            "Amount": " 22.75",
+            "Retailer": "AMAZON PRIME NOW UK 866-216-1072",
+            "ProcessDate": " Process Date 28/12/2015",
+            "sortDate": "2015-12-28T00:00:00.000Z"
+        },
+        {
+            "Date": "28/12/2015",
+            "Reference": "AT153630032000010075085",
+            "Amount": " 11.90",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 28/12/2015",
+            "sortDate": "2015-12-28T00:00:00.000Z"
+        },
+        {
+            "Date": "28/12/2015",
+            "Reference": "AT153630032000010058037",
+            "Amount": " 4.80",
+            "Retailer": "COSTA COFFEE - CHEAM SURREY",
+            "ProcessDate": " Process Date 28/12/2015",
+            "sortDate": "2015-12-28T00:00:00.000Z"
+        },
+        {
+            "Date": "28/12/2015",
+            "Reference": "AT153630032000010065295",
+            "Amount": " 82.45",
+            "Retailer": "LOWER MORDEN GARDEN CEN MORDEN",
+            "ProcessDate": "GOODS Process Date 28/12/2015  GOODS",
+            "sortDate": "2015-12-28T00:00:00.000Z"
+        },
+        {
+            "Date": "28/12/2015",
+            "Reference": "AT153630032000010083941",
+            "Amount": " 1.79",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 29/12/2015",
+            "sortDate": "2015-12-28T00:00:00.000Z"
+        },
+        {
+            "Date": "29/12/2015",
+            "Reference": "AT153630082000010004818",
+            "Amount": " 6.38",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 29/12/2015",
+            "sortDate": "2015-12-29T00:00:00.000Z"
+        },
+        {
+            "Date": "29/12/2015",
+            "Reference": "AT153640025000010062147",
+            "Amount": " 39.91",
+            "Retailer": "LOWER MORDEN GARDEN CEN MORDEN",
+            "ProcessDate": "GOODS Process Date 29/12/2015  GOODS",
+            "sortDate": "2015-12-29T00:00:00.000Z"
+        },
+        {
+            "Date": "29/12/2015",
+            "Reference": "AT153640025000010092069",
+            "Amount": " 64.27",
+            "Retailer": "TESCO STORES 3235 SUTTON",
+            "ProcessDate": " Process Date 30/12/2015",
+            "sortDate": "2015-12-29T00:00:00.000Z"
+        },
+        {
+            "Date": "30/12/2015",
+            "Reference": "AT153650024000010095590",
+            "Amount": " 17.35",
+            "Retailer": "CARTRAWLER MILLTOWN",
+            "ProcessDate": " Process Date 31/12/2015",
+            "sortDate": "2015-12-30T00:00:00.000Z"
+        },
+        {
+            "Date": "31/12/2015",
+            "Reference": "AT160010013000010049887",
+            "Amount": " 22.05",
+            "Retailer": "SAINSBURY'S SPRMRKTS LT SUTTON",
+            "ProcessDate": " Process Date 31/12/2015",
+            "sortDate": "2015-12-31T00:00:00.000Z"
+        },
+        {
+            "Date": "02/01/2016",
+            "Reference": "AT160030007000010044782",
+            "Amount": " 9.40",
+            "Retailer": "SAINSBURY'S SPRMRKTS LT SUTTON",
+            "ProcessDate": " Process Date 02/01/2016",
+            "sortDate": "2016-01-02T00:00:00.000Z"
+        },
+        {
+            "Date": "02/01/2016",
+            "Reference": "AT160030007000010045753",
+            "Amount": " 47.33",
+            "Retailer": "SAINSBURY'S SUPERMARKET SUTTON",
+            "ProcessDate": " Process Date 02/01/2016",
+            "sortDate": "2016-01-02T00:00:00.000Z"
+        },
+        {
+            "Date": "04/01/2016",
+            "Reference": "AT160040074000010006429",
+            "Amount": " 1.20",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 04/01/2016",
+            "sortDate": "2016-01-04T00:00:00.000Z"
+        },
+        {
+            "Date": "04/01/2016",
+            "Reference": "AT160040074000010006573",
+            "Amount": " 1.99",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 04/01/2016",
+            "sortDate": "2016-01-04T00:00:00.000Z"
+        },
+        {
+            "Date": "04/01/2016",
+            "Reference": "AT160040074000010008253",
+            "Amount": " 3.86",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 04/01/2016",
+            "sortDate": "2016-01-04T00:00:00.000Z"
+        },
+        {
+            "Date": "04/01/2016",
+            "Reference": "AT160040074000010009377",
+            "Amount": " 1.99",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 04/01/2016",
+            "sortDate": "2016-01-04T00:00:00.000Z"
+        },
+        {
+            "Date": "04/01/2016",
+            "Reference": "AT160040074000010009880",
+            "Amount": " 13.09",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 04/01/2016",
+            "sortDate": "2016-01-04T00:00:00.000Z"
+        },
+        {
+            "Date": "05/01/2016",
+            "Reference": "AT160060022000010048634",
+            "Amount": " 20.02",
+            "Retailer": "AMAZON PRIME NOW UK 866-216-1072",
+            "ProcessDate": " Process Date 05/01/2016",
+            "sortDate": "2016-01-05T00:00:00.000Z"
+        },
+        {
+            "Date": "08/01/2016",
+            "Reference": "AT160090008000010077176",
+            "Amount": " 12.00",
+            "Retailer": "SUSHI TAMA SUTTON",
+            "ProcessDate": " Process Date 08/01/2016",
+            "sortDate": "2016-01-08T00:00:00.000Z"
+        },
+        {
+            "Date": "08/01/2016",
+            "Reference": "AT160090008000010089237",
+            "Amount": " 49.43",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 09/01/2016",
+            "sortDate": "2016-01-08T00:00:00.000Z"
+        },
+        {
+            "Date": "08/01/2016",
+            "Reference": "AT160090008000010089238",
+            "Amount": " 2.49",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 09/01/2016",
+            "sortDate": "2016-01-08T00:00:00.000Z"
+        },
+        {
+            "Date": "09/01/2016",
+            "Reference": "AT160100010000010090526",
+            "Amount": " 39.55",
+            "Retailer": "TESCO STORES 3235 SUTTON",
+            "ProcessDate": " Process Date 10/01/2016",
+            "sortDate": "2016-01-09T00:00:00.000Z"
+        },
+        {
+            "Date": "10/01/2016",
+            "Reference": "AT160110032000010054421",
+            "Amount": " 6.20",
+            "Retailer": "SAINSBURY'S SPRMRKTS LT SUTTON",
+            "ProcessDate": " Process Date 10/01/2016",
+            "sortDate": "2016-01-10T00:00:00.000Z"
+        },
+        {
+            "Date": "10/01/2016",
+            "Reference": "AT160110032000010083225",
+            "Amount": " 16.85",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 11/01/2016",
+            "sortDate": "2016-01-10T00:00:00.000Z"
+        },
+        {
+            "Date": "14/01/2016",
+            "Reference": "AT160150024000010073157",
+            "Amount": " 25.50",
+            "Retailer": "SUSHI TAMA SUTTON",
+            "ProcessDate": " Process Date 14/01/2016",
+            "sortDate": "2016-01-14T00:00:00.000Z"
+        },
+        {
+            "Date": "14/01/2016",
+            "Reference": "AT160150024000010063503",
+            "Amount": " 12.00",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "559 Cheam Process Date 14/01/2016  559 Cheam",
+            "sortDate": "2016-01-14T00:00:00.000Z"
+        },
+        {
+            "Date": "16/01/2016",
+            "Reference": "AT160170010000010082439",
+            "Amount": " 28.13",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 16/01/2016",
+            "sortDate": "2016-01-16T00:00:00.000Z"
+        },
+        {
+            "Date": "16/01/2016",
+            "Reference": "AT160170010000010054088",
+            "Amount": " 25.00",
+            "Retailer": "AMAZON UK RETAIL AMAZON.CO.UK",
+            "ProcessDate": " Process Date 16/01/2016",
+            "sortDate": "2016-01-16T00:00:00.000Z"
+        },
+        {
+            "Date": "16/01/2016",
+            "Reference": "AT160170010000010060857",
+            "Amount": " 66.91",
+            "Retailer": "SAINSBURY'S SUPERMARKET SUTTON",
+            "ProcessDate": " Process Date 16/01/2016",
+            "sortDate": "2016-01-16T00:00:00.000Z"
+        },
+        {
+            "Date": "17/01/2016",
+            "Reference": "AT160180019000010074121",
+            "Amount": " 1.89",
+            "Retailer": "AMAZON DIGITAL VIDEO AMAZON.CO.UK/",
+            "ProcessDate": " Process Date 17/01/2016",
+            "sortDate": "2016-01-17T00:00:00.000Z"
+        },
+        {
+            "Date": "17/01/2016",
+            "Reference": "AT160180019000010074283",
+            "Amount": " -1.89",
+            "Retailer": "AMAZON DIGITAL VIDEO AMAZON.CO.UK/",
+            "ProcessDate": " Process Date 17/01/2016",
+            "sortDate": "2016-01-17T00:00:00.000Z"
+        },
+        {
+            "Date": "19/01/2016",
+            "Reference": "AT160190066000010005275",
+            "Amount": " 28.98",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 19/01/2016",
+            "sortDate": "2016-01-19T00:00:00.000Z"
+        },
+        {
+            "Date": "21/01/2016",
+            "Reference": "AT160220032000010056567",
+            "Amount": " 4.75",
+            "Retailer": "COSTA COFFEE - CHEAM SURREY",
+            "ProcessDate": " Process Date 21/01/2016",
+            "sortDate": "2016-01-21T00:00:00.000Z"
+        },
+        {
+            "Date": "23/01/2016",
+            "Reference": "AT160230044000010002460",
+            "Amount": " 77.34",
+            "Retailer": "AMAZON UK RETAIL AMAZON.CO.UK",
+            "ProcessDate": " Process Date 23/01/2016",
+            "sortDate": "2016-01-23T00:00:00.000Z"
+        },
+        {
+            "Date": "23/01/2016",
+            "Reference": "AT160240011000010063483",
+            "Amount": " 27.71",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "559 Cheam Process Date 23/01/2016  559 Cheam",
+            "sortDate": "2016-01-23T00:00:00.000Z"
+        },
+        {
+            "Date": "25/01/2016",
+            "Reference": "AT160250055000010009026",
+            "Amount": " -77.34",
+            "Retailer": "AMAZON UK RETAIL AMAZON.CO.UK",
+            "ProcessDate": " Process Date 25/01/2016",
+            "sortDate": "2016-01-25T00:00:00.000Z"
+        },
+        {
+            "Date": "25/01/2016",
+            "Reference": "AT160250055000010009654",
+            "Amount": " 107.89",
+            "Retailer": "AMAZON UK RETAIL AMAZON.CO.UK",
+            "ProcessDate": " Process Date 25/01/2016",
+            "sortDate": "2016-01-25T00:00:00.000Z"
+        },
+        {
+            "Date": "26/01/2016",
+            "Reference": "AT160270018000010076454",
+            "Amount": " 16.29",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 26/01/2016",
+            "sortDate": "2016-01-26T00:00:00.000Z"
+        },
+        {
+            "Date": "26/01/2016",
+            "Reference": "AT160260078000010005801",
+            "Amount": " 5.98",
+            "Retailer": "AMAZON SVCS EUROPE,SAR AMAZON.CO.UK",
+            "ProcessDate": " Process Date 26/01/2016",
+            "sortDate": "2016-01-26T00:00:00.000Z"
+        },
+        {
+            "Date": "26/01/2016",
+            "Reference": "AT160270018000010060587",
+            "Amount": " 3.35",
+            "Retailer": "WAITROSE CHEAM SUTTON",
+            "ProcessDate": "559 Cheam Process Date 26/01/2016  559 Cheam",
+            "sortDate": "2016-01-26T00:00:00.000Z"
+        },
+        {
+            "Date": "29/01/2016",
+            "Reference": "AT160300010000010096752",
+            "Amount": " 27.42",
+            "Retailer": "4029357733*PAYPAL *HALF SINGAPORE",
+            "ProcessDate": " Process Date 30/01/2016",
+            "sortDate": "2016-01-29T00:00:00.000Z"
+        },
+        {
+            "Date": "29/01/2016",
+            "Reference": "AT160300010000010077955",
+            "Amount": " 23.00",
+            "Retailer": "SUSHI TAMA SUTTON",
+            "ProcessDate": " Process Date 29/01/2016",
+            "sortDate": "2016-01-29T00:00:00.000Z"
+        },
+        {
+            "Date": "30/01/2016",
+            "Reference": "AT160310011000010087713",
+            "Amount": " 7.45",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 31/01/2016",
+            "sortDate": "2016-01-30T00:00:00.000Z"
+        },
+        {
+            "Date": "30/01/2016",
+            "Reference": "AT160310011000010080923",
+            "Amount": " 37.28",
+            "Retailer": "WM MORRISONS STORES SUTTON",
+            "ProcessDate": " Process Date 30/01/2016",
+            "sortDate": "2016-01-30T00:00:00.000Z"
+        },
+        {
+            "Date": "30/01/2016",
+            "Reference": "AT160310011000010078710",
+            "Amount": " 133.00",
+            "Retailer": "THE FRAMERY SUTTON",
+            "ProcessDate": " Process Date 30/01/2016",
+            "sortDate": "2016-01-30T00:00:00.000Z"
+        },
+        {
+            "Date": "31/01/2016",
+            "Reference": "AT160320024000010072523",
+            "Amount": " 9.99",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 31/01/2016",
+            "sortDate": "2016-01-31T00:00:00.000Z"
+        },
+        {
+            "Date": "01/02/2016",
+            "Reference": "AT160320076000010006963",
+            "Amount": " 119.99",
+            "Retailer": "AMAZON UK MARKETPLACE 800-279-6620",
+            "ProcessDate": " Process Date 01/02/2016",
+            "sortDate": "2016-02-01T00:00:00.000Z"
+        },
+        {
+            "Date": "02/02/2016",
+            "Reference": "AT160340021000010056343",
+            "Amount": " 2.75",
+            "Retailer": "SAINSBURY'S SUPERMARKET MORDEN",
+            "ProcessDate": " Process Date 02/02/2016",
+            "sortDate": "2016-02-02T00:00:00.000Z"
+        },
+        {
+            "Date": "05/02/2016",
+            "Reference": "AT160370010000010079164",
+            "Amount": " 10.20",
+            "Retailer": "THE STAR CHEAM",
+            "ProcessDate": " Process Date 05/02/2016",
+            "sortDate": "2016-02-05T00:00:00.000Z"
+        },
+        {
+            "Date": "05/02/2016",
+            "Reference": "AT160370010000010093915",
+            "Amount": " 1.10",
+            "Retailer": "TESCO STORES 2259 SUTTON",
+            "ProcessDate": " Process Date 06/02/2016",
+            "sortDate": "2016-02-05T00:00:00.000Z"
+        },
+        {
+            "Date": "06/02/2016",
+            "Reference": "AT160380010000010090083",
+            "Amount": " 10.68",
+            "Retailer": "TESCO SELF SERVICE SUTTON",
+            "ProcessDate": " Process Date 07/02/2016",
+            "sortDate": "2016-02-06T00:00:00.000Z"
+        },
+        {
+            "Date": "09/02/2016",
+            "Reference": "AT160400078000010004995",
+            "Amount": " 53.99",
+            "Retailer": "AMAZON UK RETAIL AMAZON.CO.UK",
+            "ProcessDate": " Process Date 09/02/2016",
+            "sortDate": "2016-02-09T00:00:00.000Z"
         }
     ]
 }
