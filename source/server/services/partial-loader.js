@@ -5,13 +5,14 @@
 var fs = require('fs');
 var hbs = require('hbs');
 var filenames = null;
-var path = require('path')
+var path = require('path');
+var config = require('../config');
 
 //console.log(partialsDir);
 
 module.exports = function(){
 
-    var partialsDir = path.resolve(__dirname,'../../views/partials/');
+    var partialsDir = path.resolve(__dirname,config.partialPath);
 
     filenames = fs.readdirSync(partialsDir);
     filenames.forEach(function (filename) {

@@ -3,8 +3,9 @@
  */
 
 var config = {
-    database: './server/data/data.json',
+    database: './data/data.json',
     csvFile: './data02.csv',
+    partialPath: '../views/partials/',
     error: {
         uploadfile: 'Please upload a file'
     }

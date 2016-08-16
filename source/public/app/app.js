@@ -1,6 +1,13 @@
 /**
  * Created by dolive on 5/31/16.
  */
+
+require('./sass/main.css');
+var accountList = require('./components/account-list/account-list');
+var globalnavigation = require('./components/global-navigation/global-navigation');
+var $ = require('../node_modules/jquery/dist/jquery.min');
+
+
 $(document).ready(function () {
     // Handler for .ready() called.
     var totalcount = 0;

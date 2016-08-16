@@ -1,22 +1,4 @@
-
-$global-nav-colour:#3d4a57;
-$border-colour: #666;
-$body-colour: #f2f2f2;
-$colour-White: #FFF;
-
-
-@import 'meyer-reset.scss';
-@import 'mixins.scss';
-@import 'partials/global-navigation.scss';
-@import 'partials/footer.scss';
-
-
-
-
-body{
-    background: $body-colour;
-    font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+@import '../../sass/vars';
 
 .chart-title{
     border-bottom: 1px solid #d7d7d7;
@@ -40,24 +22,6 @@ body{
     font-size: 18px;
     margin: 0 auto;
 }
-
-.wrapper{
-    padding:20px;
-    max-width:1024px;
-    margin: 10px auto 30px;
-
-}
-.border{
-    border-bottom: 1px solid #d7d7d7;
-    color: $border-colour;
-    font-size: 14px;
-    font-weight: 200;
-    padding: 7px 10px 4px;
-    background-color: white;
-    @include border-radius(10px);
-}
-
-
 
 .transactions-list__item{
     padding:5px 10px;

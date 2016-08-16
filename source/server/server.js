@@ -1,20 +1,21 @@
 /**
  * Created by dolive on 5/20/16.
  */
-var config = require('./server/config');
-var statementReader = require('./server/services/statementReader');
+var config = require('./config');
+var statementReader = require('./services/statementReader');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var hbs = require('hbs');
 var reader = statementReader();
-var partialLoader = require('./server/services/partial-loader')();
+var partialLoader = require('./services/partial-loader')();
 var multer = require('multer');
-var upload = multer({dest: './server/uploads/'});
+var upload = multer({dest: './uploads/'});
 
 
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static('../public'));
+app.use(express.static('../public/views/'));
 app.set('view engine', 'hbs');
 
 

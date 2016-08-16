@@ -132,6 +132,7 @@ module.exports = function () {
         },
         writeJsonFile: function (data) {
             console.log('write');
+
             fs.writeFile(config.database, JSON.stringify(data, null, 4), (err) => {
                 if (err) console.log('ERROR: Writing data to JSON file');
                 console.log('It\'s saved!');
