@@ -34,12 +34,10 @@ module.exports = function () {
                     self.mergedata(jsonData, csvData);
                 })
             });
-
-
         },
         mergedata: function (_old, _new) {
-            var obj = {};
 
+            var obj = {};
             _new = JSON.parse(_new);
 
             obj.account = _.uniq(_.union(_old.account, _new.account), false, function (item, key, Reference) {
@@ -50,19 +48,19 @@ module.exports = function () {
                 console.log('exisits');
                 _old.account = obj.account;
                 self.writeJsonFile(obj);
-            } else {
+            }else{
                 console.log('does note exist');
                 self.writeJsonFile(obj);
             }
-
-
         },
         convertCSVData: function (_file, _callback) {
 
             self = this;
 
-             fs.createReadStream(_file)
+            fs.createReadStream(_file)
+
                 .pipe(csvStream)
+
                 .on('data', function (data) {
                     var arr = data.Date.split('/'),
                         dateObj = new Date(arr[2], arr[1] - 1, arr[0]);
@@ -71,7 +69,9 @@ module.exports = function () {
                     data.Reference = data.Reference.split(' ')[1];
                     json.push(data);
                 })
+
                 .on('error', (err) => console.log('ERROR: Cannot convert CSV Data', err))
+
                 .on('end', function (data) {
                     listData = self.sortDate(json);
                     _callback(JSON.stringify({
@@ -80,38 +80,6 @@ module.exports = function () {
                 });
         },
 
-        /*
-         loadData: function (_file, _callback) {
-
-         self = this;
-
-         if (listData.length) {
-         _callback(listData);
-         return;
-         }
-
-         fs.createReadStream(_file)
-         .pipe(stream)
-         .on('data', function (data) {
-         var arr = data.Date.split('/'),
-         dateObj = new Date(arr[2], arr[1] - 1, arr[0]);
-         data.sortDate = dateObj;
-         json.push(data);
-         })
-         .on('end', function (data) {
-         listData = self.sortDate(json);
-         _callback(listData);
-
-         /!*self.writeJsonFile(
-         JSON.stringify({
-         account: listData
-         }, null, 4));*!/
-         });
-
-         //TODO:create an error handler too
-
-         },
-         */
         sortDate: function (data) {
 
             var sortedData = _.sortBy(data, function (o) {
@@ -142,7 +110,6 @@ module.exports = function () {
 
             fs.stat(config.database, (err, res) => {
 
-
                 if (err) {
                     console.log('ERROR: Please Import a data file');
                     _callback({});
@@ -153,7 +120,6 @@ module.exports = function () {
                         _callback(JSON.parse(data));
                     });
                 }
-
             })
         }
     }

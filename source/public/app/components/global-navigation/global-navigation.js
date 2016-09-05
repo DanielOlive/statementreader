@@ -1,6 +1,4 @@
-/**
- * Created by dolive on 8/15/16.
- */
+'use strict';
 
 require('./global-navigation.css');
 module.exports ='global-navigation';

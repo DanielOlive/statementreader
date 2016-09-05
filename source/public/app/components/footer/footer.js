@@ -1,6 +1,3 @@
-/**
- * Created by dolive on 8/15/16.
- */
-
+'use strict';
 require('./footer.css');
 module.exports ='footer';
