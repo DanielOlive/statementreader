@@ -8,7 +8,15 @@ var config = {
     partialPath: '../views/partials/',
     error: {
         uploadfile: 'Please upload a file'
+    },
+    csvDefaults: {
+        raw: false,     // do not decode to utf-8 strings
+        separator: ',', // specify optional cell separator
+        quote: '"',     // specify optional quote character
+        escape: '"',    // specify optional escape character (defaults to quote value)
+        newline: '\n',  // specify a newline character
+        headers: ['Date', 'Reference', 'Amount', 'Retailer', 'ProcessDate'] // Specifing the headers
     }
-}
+};
 
 module.exports = config;

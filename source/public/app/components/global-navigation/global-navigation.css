@@ -1,0 +1,17 @@
+.global-navigation {
+  background-color: #3d4a57;
+  min-height: 80px; }
+
+.import-file_link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  border: none; }
+
+/*# sourceMappingURL=global-navigation.css.map */

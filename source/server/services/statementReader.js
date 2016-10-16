@@ -10,14 +10,7 @@ var csv = require('csv-parser'),
     self,
     json = [],
     check = /(LONDON|PAYMENT RECEIVED)/,
-    csvStream = csv({
-        raw: false,     // do not decode to utf-8 strings
-        separator: ',', // specify optional cell separator
-        quote: '"',     // specify optional quote character
-        escape: '"',    // specify optional escape character (defaults to quote value)
-        newline: '\n',  // specify a newline character
-        headers: ['Date', 'Reference', 'Amount', 'Retailer', 'ProcessDate'] // Specifing the headers
-    });
+    csvStream = csv(config.csvDefaults);
 
 module.exports = function () {
 
@@ -61,7 +54,7 @@ module.exports = function () {
 
                 .pipe(csvStream)
 
-                .on('data', function (data) {
+                .on('data', (data) => {
                     var arr = data.Date.split('/'),
                         dateObj = new Date(arr[2], arr[1] - 1, arr[0]);
 
@@ -72,7 +65,7 @@ module.exports = function () {
 
                 .on('error', (err) => console.log('ERROR: Cannot convert CSV Data', err))
 
-                .on('end', function (data) {
+                .on('end', (data) =>{
                     listData = self.sortDate(json);
                     _callback(JSON.stringify({
                         account: listData
@@ -82,23 +75,21 @@ module.exports = function () {
 
         sortDate: function (data) {
 
-            var sortedData = _.sortBy(data, function (o) {
-                return o.sortDate;
-            });
+            var sortedData = _.sortBy(data, (o) => o.sortDate);
             var arr = [];
-            sortedData.forEach(function (item) {
+            sortedData.forEach((item) => {
                 if (!self.filterCheck(item.Retailer)) {
                     arr.push(item);
                 }
-            })
+            });
             return arr;
         },
-        filterCheck: function (arr) {
+        filterCheck: (arr) => {
             if (arr.toString().match(check)) {
                 return true;
             }
         },
-        writeJsonFile: function (data) {
+        writeJsonFile: (data) => {
             console.log('write');
 
             fs.writeFile(config.database, JSON.stringify(data, null, 4), (err) => {

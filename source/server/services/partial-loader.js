@@ -10,12 +10,12 @@ var config = require('../config');
 
 //console.log(partialsDir);
 
-module.exports = function(){
+module.exports = ()=>{
 
     var partialsDir = path.resolve(__dirname,config.partialPath);
 
     filenames = fs.readdirSync(partialsDir);
-    filenames.forEach(function (filename) {
+    filenames.forEach((filename) =>{
         var matches = /^([^.]+).hbs$/.exec(filename);
         if (!matches) {
             return;
