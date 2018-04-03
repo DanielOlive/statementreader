@@ -1,0 +1,69 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js upgrade webpack-dev-server@^2.11.1
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.3.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "public",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "webpack",
+      "start:dev": "webpack-dev-server"
+    },
+    "author": "Daniel De Oliveira",
+    "license": "ISC",
+    "dependencies": {
+      "prettier": "^1.11.1",
+      "react": "^16.3.0",
+      "react-dom": "^16.3.0",
+      "react-router-dom": "^4.2.2"
+    },
+    "devDependencies": {
+      "autoprefixer": "^8.0.0",
+      "babel-core": "^6.26.0",
+      "babel-loader": "^7.1.2",
+      "babel-preset-env": "^1.6.1",
+      "babel-preset-react": "^6.24.1",
+      "browser-sync": "^2.23.6",
+      "browser-sync-webpack-plugin": "^2.0.1",
+      "clean-webpack-plugin": "^0.1.18",
+      "css-loader": "^0.28.9",
+      "cssnano": "^3.10.0",
+      "extract-text-webpack-plugin": "^3.0.2",
+      "html-webpack-plugin": "^2.28.0",
+      "node-sass": "^4.7.2",
+      "postcss-loader": "^2.1.0",
+      "prettier-webpack-plugin": "^0.2.2",
+      "sass-loader": "^6.0.6",
+      "style-loader": "^0.20.2",
+      "webpack": "^3.11.0",
+      "webpack-cli": "^2.0.13",
+      "webpack-dev-server": "^3.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: No lockfile in this directory. Run `yarn install` to generate one.
+      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:89389:13
+      at <anonymous>
