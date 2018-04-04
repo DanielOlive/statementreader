@@ -1,29 +1,23 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React from "react"
+import { BrowserRouter as Router, Route } from "react-router-dom"
+
+import GlobalNav from "./components/global-navigation"
+import Footer from "./components/footer"
+import Dashboard from "./containers/dashboard"
+import Home from "./containers/home"
 
 const Routes = () => (
-    <Router>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/topics">Topics</Link>
-          </li>
-        </ul>
-  
-        <hr />
-  
-        <Route exact path="/" render={() => <div>Home</div>} />
-        
-        <Route path="/about" render={() => <div>About</div>} />
-        <Route path="/topics" render={() => <div>Topics</div>} />
+  <Router>
+    <div className="grid-container">
+      <GlobalNav />
+      <div className="container">
+        <Route exact path="/" component={Home} />
+        <Route path="/dashboard" component={Dashboard} />
+        {/*<Route path="/topics" render={() => <div>Topics</div>} />*/}
       </div>
-    </Router>
-  );
+      <Footer />
+    </div>
+  </Router>
+)
 
-  export default Routes
+export default Routes

@@ -1,8 +1,7 @@
 module.exports = {
-    plugins: {
-      // 'precss':{},
-      autoprefixer: {},
-      cssnano: {}
-    }
+  plugins: {
+    // 'precss':{},
+    autoprefixer: {},
+    cssnano: {}
   }
-  
+}

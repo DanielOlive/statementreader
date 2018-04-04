@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,kBAAkB;EACd,gBAAgB,ECHD,OAAO;EDItB,UAAU,EAAE,IAAI;;AAGpB,iBAAiB;EACb,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAC,IAAI;EACR,IAAI,EAAC,IAAI;EACT,gBAAgB,EAAC,KAAK;EACtB,OAAO,EAAC,IAAI;EEXZ,qBAAqB,EFYE,IAAI;EEX3B,kBAAkB,EFWK,IAAI;EEV3B,iBAAiB,EFUM,IAAI;EET3B,aAAa,EFSU,IAAI;EAC3B,MAAM,EAAC,IAAI",
-"sources": ["global-navigation.scss","../../sass/_vars.scss","../../sass/_mixins.scss"],
-"names": [],
-"file": "global-navigation.css"
-}
