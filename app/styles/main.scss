@@ -4,7 +4,7 @@
 @import "./components";
 
 body {
-    background: $body-colour;
+    background: rgb(80,66, 79);
     font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #d7d7d7;
 }
@@ -12,7 +12,9 @@ body {
 .grid-container{
     display: grid;
     grid-gap: 10px;
-    background-color: #2196F3;
+    background-color: rgb(40,45,47);
+    max-width: 1080px;
+    margin: 0 auto
 }
 
 .border{
