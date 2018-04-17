@@ -8,8 +8,6 @@ class TransactionList extends React.Component {
   }
 
   componentWillMount() {
-    // TRANSACTIONLIST_PATH
-
     fetch(TRANSACTIONLIST_PATH)
       .then(function(response) {
         return response.json();
@@ -23,7 +21,7 @@ class TransactionList extends React.Component {
     const list = this.state.transactions ? this.state.transactions : [];
     return (
       <div className="transaction-list">
-        <div className="transaction-list__titles">
+        <div className="transaction-list__titles transaction-list__item">
           <p>Date</p>
           <p>Transaction</p>
           <p>Amount</p>
@@ -31,19 +29,17 @@ class TransactionList extends React.Component {
           <p>Selection</p>
         </div>
 
-        <div className="transaction-list_results">
-          {list.map(({ Date, Amount, Retailer }) => (
-            <div key={Math.random()} className="transaction-list__items">
-              <p>{Date}</p>
-              <p>{Retailer}</p>
-              <p>{Amount}</p>
-              <p>-</p>
-              <p>
-                <input type="checkbox" />
-              </p>
-            </div>
-          ))}
-        </div>
+        {list.map(({ Date, Amount, Retailer }) => (
+          <div key={Math.random()} className="transaction-list__item">
+            <p>{Date}</p>
+            <p>{Retailer}</p>
+            <p>{Amount}</p>
+            <p>-</p>
+            <p>
+              <input type="checkbox" />
+            </p>
+          </div>
+        ))}
       </div>
     );
   }

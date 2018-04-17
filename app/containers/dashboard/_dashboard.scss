@@ -1,56 +1,31 @@
 .dashboard {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 4fr;
     grid-gap: 1em;
     grid-auto-rows: minmax(100px, auto)
 }
 
 .filter-panel {
-    // background: #333666;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: start;
 }
 
 .transaction-list {
-    // background: #333666;
+    display: grid;
+    grid-gap: 10px;
 }
 
-.uploader {
-    // background: #333666;
-}
-
+// .uploader {
+// }
 // TRANSATION LIST
-
-
-.table-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    padding-left: 10px;
-}
-
-.column {
-    flex-grow: 0; 
-    flex-shrink: 0;
-    vertical-align: top;
-  }
-
-.transaction-list__titles,
-.transaction-list__items {
-    // display: flex;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
-    padding-left: 10px; 
-    @extend .table-row;
-
-    p {
-        @extend .column;
+.transaction-list__item {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 5fr 1fr .5fr .5fr;
+    padding: .5em 0;
+    &:nth-child(even) {
+        background: lighten($container-colour, 10%);
     }
 }
-
-// .transaction-list_item {
-//     // flex-direction: row;
-//     p {
-//         flex-grow: 1;
-//     }
-// }
-

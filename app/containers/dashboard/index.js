@@ -3,15 +3,15 @@
 import React from "react";
 
 import TransactionList from "./partials/transaction-list";
+import FilterPanel from "./partials/filter-panel";
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <div className="filter-panel">filter</div>
+      <FilterPanel />
       <div className="transaction-list">
         <TransactionList />
       </div>
-      <div className="uploader">Uploader</div>
     </div>
   );
 };
