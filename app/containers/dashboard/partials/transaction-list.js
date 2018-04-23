@@ -1,5 +1,9 @@
 import React from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 import { TRANSACTIONLIST_PATH } from "../../../config";
+import { fetchTransactions } from "../actions";
+import getTransactions from "../selectors";
 
 class TransactionList extends React.Component {
   constructor(props) {
@@ -8,17 +12,13 @@ class TransactionList extends React.Component {
   }
 
   componentWillMount() {
-    fetch(TRANSACTIONLIST_PATH)
-      .then(function(response) {
-        return response.json();
-      })
-      .then(transactions => {
-        this.setState({ transactions: transactions.list });
-      });
+    this.props.fetchTransactions();
   }
 
   render() {
-    const list = this.state.transactions ? this.state.transactions : [];
+    const { transactions = [] } = this.props;
+    //  const list = transactions.length ? transactions:[];
+
     return (
       <div className="transaction-list">
         <div className="transaction-list__titles transaction-list__item">
@@ -29,20 +29,37 @@ class TransactionList extends React.Component {
           <p>Selection</p>
         </div>
 
-        {list.map(({ Date, Amount, Retailer }) => (
-          <div key={Math.random()} className="transaction-list__item">
-            <p>{Date}</p>
-            <p>{Retailer}</p>
-            <p>{Amount}</p>
-            <p>-</p>
-            <p>
-              <input type="checkbox" />
-            </p>
-          </div>
-        ))}
+        {transactions &&
+          transactions.map(({ Date, Amount, Retailer }) => (
+            <div key={Math.random()} className="transaction-list__item">
+              <p>{Date}</p>
+              <p>{Retailer}</p>
+              <p>{Amount}</p>
+              <p>-</p>
+              <p>
+                <input type="checkbox" />
+              </p>
+            </div>
+          ))}
       </div>
     );
   }
 }
 
-export default TransactionList;
+TransactionList.propTypes = {
+  // transactions: PropTypes.array,
+  // fetchTransactions: PropTypes.func,
+};
+
+const mapStateToProps = state => ({
+  //  transactions: (state) => state.transactionList.transactions
+  transactions: getTransactions(state)
+});
+
+const mapDispatchToProps = {
+  fetchTransactions
+};
+
+// fetchTransactions
+
+export default connect(mapStateToProps, mapDispatchToProps)(TransactionList);

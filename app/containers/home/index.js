@@ -1,17 +1,13 @@
-"use strict"
+import React from "react";
+import Uploader from "../../components/uploader";
 
-import React from "react"
-import Uploader from "../../components/uploader"
+const Home = () => (
+  <div>
+    <hr />
+    <h1>Home</h1>
+    <hr />
+    <Uploader />
+  </div>
+);
 
-const Home = () => {
-  return (
-    <div>
-      <hr />
-      <h1>Home</h1>
-      <hr />
-      <Uploader />
-    </div>
-  )
-}
-
-export default Home
+export default Home;
