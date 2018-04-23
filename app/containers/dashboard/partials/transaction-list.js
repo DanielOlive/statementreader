@@ -15,6 +15,13 @@ class TransactionList extends React.Component {
     this.props.fetchTransactions();
   }
 
+  handleSelection(e, value) {
+    const isChecked = e.currentTarget.checked;
+    const { Amount } = value;
+    if (isChecked) console.log(`Add:${Amount}`);
+    if (!isChecked) console.log(`Subtract:${Amount}`);
+  }
+
   render() {
     const { transactions = [] } = this.props;
     //  const list = transactions.length ? transactions:[];
@@ -37,7 +44,10 @@ class TransactionList extends React.Component {
               <p>{Amount}</p>
               <p>-</p>
               <p>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={e => this.handleSelection(e, { Amount })}
+                />
               </p>
             </div>
           ))}
@@ -47,8 +57,8 @@ class TransactionList extends React.Component {
 }
 
 TransactionList.propTypes = {
-  // transactions: PropTypes.array,
-  // fetchTransactions: PropTypes.func,
+  transactions: PropTypes.array,
+  fetchTransactions: PropTypes.func
 };
 
 const mapStateToProps = state => ({

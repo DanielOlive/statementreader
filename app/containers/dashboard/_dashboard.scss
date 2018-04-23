@@ -1,8 +1,19 @@
 .dashboard {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    // grid-template-columns: 1fr 4fr;
     grid-gap: 1em;
-    grid-auto-rows: minmax(100px, auto)
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "summary-bar"
+     "filter-panel"
+     "transaction-list";
+
+     @media only screen and (min-width: $medium-width)   {
+        grid-template-columns: 20% auto;
+        grid-template-areas: 
+        "summary-bar summary-bar"
+         "filter-panel transaction-list";
+     }
 }
 
 .filter-panel {
@@ -10,11 +21,13 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-content: start;
+    grid-area: filter-panel;
 }
 
 .transaction-list {
     display: grid;
     grid-gap: 10px;
+    grid-area: transaction-list;
 }
 
 // .uploader {
