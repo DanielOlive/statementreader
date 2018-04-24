@@ -1,10 +1,9 @@
 import { createSelector } from "reselect";
 
-const getTransactionList = state => state.transactionlist;
-
+const getTransactionList = state => state.dashboard;
 const getTransactions = createSelector(
   [getTransactionList],
-  transactions => transactions.transactions
+  dashboard => dashboard.transactionlist.transactions
 );
 
 export default getTransactions;

@@ -16,10 +16,10 @@ class TransactionList extends React.Component {
   }
 
   handleSelection(e, value) {
-    const isChecked = e.currentTarget.checked;
+    this.isChecked = e.currentTarget.checked;
     const { Amount } = value;
-    if (isChecked) console.log(`Add:${Amount}`);
-    if (!isChecked) console.log(`Subtract:${Amount}`);
+    if (this.isChecked) console.log(`Add:${Amount}`);
+    if (!this.isChecked) console.log(`Subtract:${Amount}`);
   }
 
   render() {
