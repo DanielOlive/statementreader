@@ -1,10 +1,11 @@
 import React from "react";
-import Uploader from "../../../components/uploader";
+import UploaderModal from "../../../components/uploader-modal";
+import TransactionToggle from "./transaction-toggle";
 
 const FilterPanel = () => (
   <div className="filter-panel">
-    <h1> Filter Panel </h1>
-    <Uploader />
+    <UploaderModal />
+    <TransactionToggle />
   </div>
 );
 

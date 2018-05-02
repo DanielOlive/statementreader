@@ -1,15 +1,16 @@
-"use strict"
+"use strict";
 // require('./footer.css')
-import React from "react"
+import React from "react";
 
 const Footer = () => {
+  const date = new Date().getFullYear();
   return (
     <div>
       <hr />
-      Footer
+      Statement Reader - {date}
       <hr />
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

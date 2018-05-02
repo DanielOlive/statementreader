@@ -1,9 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { TRANSACTIONLIST_PATH } from "../../../config";
-import { fetchTransactions } from "../actions";
-import getTransactions from "../selectors";
+import {
+  fetchTransactions,
+  incrementTotalAmount,
+  decrementTotalAmount
+} from "../actions";
+import { getTransactions, getTransactionToggle } from "../selectors";
 
 class TransactionList extends React.Component {
   constructor(props) {
@@ -17,14 +20,21 @@ class TransactionList extends React.Component {
 
   handleSelection(e, value) {
     this.isChecked = e.currentTarget.checked;
-    const { Amount } = value;
-    if (this.isChecked) console.log(`Add:${Amount}`);
-    if (!this.isChecked) console.log(`Subtract:${Amount}`);
+    const { amount, reference } = value;
+
+    if (this.isChecked) {
+      this.props.incrementTotalAmount(amount, reference);
+    } else {
+      this.props.decrementTotalAmount(amount, reference);
+    }
   }
 
   render() {
-    const { transactions = [] } = this.props;
+    const { transactions = [], toggleValue } = this.props;
     //  const list = transactions.length ? transactions:[];
+    const transactionsFiltered = !toggleValue
+      ? transactions
+      : transactions.filter(item => item.checked);
 
     return (
       <div className="transaction-list">
@@ -37,20 +47,28 @@ class TransactionList extends React.Component {
         </div>
 
         {transactions &&
-          transactions.map(({ Date, Amount, Retailer }) => (
-            <div key={Math.random()} className="transaction-list__item">
-              <p>{Date}</p>
-              <p>{Retailer}</p>
-              <p>{Amount}</p>
-              <p>-</p>
-              <p>
-                <input
-                  type="checkbox"
-                  onChange={e => this.handleSelection(e, { Amount })}
-                />
-              </p>
-            </div>
-          ))}
+          transactionsFiltered.map(
+            ({ date, amount, retailer, reference, checked }) => (
+              <div
+                key={Math.random()}
+                className={`transaction-list__item ${checked && "active"}`}
+              >
+                <p>{date}</p>
+                <p>{retailer}</p>
+                <p>{amount}</p>
+                <p>-</p>
+                <p>
+                  <input
+                    type="checkbox"
+                    onChange={e =>
+                      this.handleSelection(e, { amount, reference })
+                    }
+                    checked={checked}
+                  />
+                </p>
+              </div>
+            )
+          )}
       </div>
     );
   }
@@ -58,18 +76,20 @@ class TransactionList extends React.Component {
 
 TransactionList.propTypes = {
   transactions: PropTypes.array,
-  fetchTransactions: PropTypes.func
+  fetchTransactions: PropTypes.func,
+  incrementTotalAmount: PropTypes.func,
+  decrementTotalAmount: PropTypes.func
 };
 
 const mapStateToProps = state => ({
-  //  transactions: (state) => state.transactionList.transactions
-  transactions: getTransactions(state)
+  transactions: getTransactions(state),
+  toggleValue: getTransactionToggle(state)
 });
 
 const mapDispatchToProps = {
-  fetchTransactions
+  fetchTransactions,
+  incrementTotalAmount,
+  decrementTotalAmount
 };
-
-// fetchTransactions
 
 export default connect(mapStateToProps, mapDispatchToProps)(TransactionList);

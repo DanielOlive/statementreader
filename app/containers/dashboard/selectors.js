@@ -1,9 +1,17 @@
 import { createSelector } from "reselect";
 
 const getTransactionList = state => state.dashboard;
-const getTransactions = createSelector(
+export const getTransactions = createSelector(
   [getTransactionList],
-  dashboard => dashboard.transactionlist.transactions
+  dashboard => dashboard.transactions
 );
 
-export default getTransactions;
+export const getTotalAmount = createSelector(
+  [getTransactionList],
+  dashboard => dashboard.totalAmount
+);
+
+export const getTransactionToggle = createSelector(
+  [getTransactionList],
+  dashboard => dashboard.transactionToggle
+);

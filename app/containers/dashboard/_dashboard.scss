@@ -41,4 +41,19 @@
     &:nth-child(even) {
         background: lighten($container-colour, 10%);
     }
+
+    &.active {
+        background: lighten($container-colour, 80%);
+        color: $container-colour;
+    }
+}
+
+// SUMMARY BAR
+
+.summary-bar{
+    position: fixed;
+    right:1rem;
+    background: $global-nav-colour;
+    border-radius: 100px;
+    padding: 1rem;
 }

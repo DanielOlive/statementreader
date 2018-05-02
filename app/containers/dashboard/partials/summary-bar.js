@@ -1,15 +1,25 @@
 import React from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
-const SummaryBar = () => {
-  const amount = "£0.00";
-  return (
-    <div className="summary-bar">
-      <div>
-        <p>Amount</p>
-        <p>{amount}</p>
-      </div>
+import { getTotalAmount } from "../selectors";
+
+const SummaryBar = ({ totalAmount }) => (
+  <div className="summary-bar">
+    <div>
+      <p>Amount</p>
+      <p>{`£ ${totalAmount}`}</p>
     </div>
-  );
+  </div>
+);
+
+const mapStateToProps = state => ({
+  //  transactions: (state) => state.transactionList.transactions
+  totalAmount: getTotalAmount(state)
+});
+
+SummaryBar.propTypes = {
+  totalAmount: PropTypes.string
 };
 
-export default SummaryBar;
+export default connect(mapStateToProps)(SummaryBar);
