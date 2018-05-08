@@ -23,7 +23,7 @@ export const fetchTransactions = () => dispatch => {
   fetch(TRANSACTIONLIST_PATH)
     .then(response => response.json())
     .then(transactions => {
-      dispatch(transactionSuccess(transactions.list));
+      dispatch(transactionSuccess(transactions.data));
     })
     .catch(() => dispatch(transactionFailure(true)));
 };
@@ -67,4 +67,23 @@ export const decrementTotalAmount = (val, reference) => (
 // Toggling the selected transactions
 export const transToggle = toggle => dispatch => {
   dispatch({ type: types.TRANSACTION_TOGGLE, toggle });
+};
+
+// Mark transactions as paid
+
+export const markTransactionAsPaid = ids => dispatch => {
+  fetch("http://localhost:3020/api/transactions/update", {
+    method: "POST",
+    body: JSON.stringify(ids),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+    .then(res => res.json())
+    .catch(error => console.error("Error:", error))
+    .then(response => {
+      console.log("Success:", response);
+      dispatch(fetchTransactions());
+    });
+  // dispatch({ type: types.MARK_TRANSACTION_AS_PAID, toggle });
 };

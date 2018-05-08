@@ -4,8 +4,8 @@ import TransactionToggle from "./transaction-toggle";
 
 const FilterPanel = () => (
   <div className="filter-panel">
-    <UploaderModal />
-    <TransactionToggle />
+    <UploaderModal className="u-margin-bottom" />
+    <TransactionToggle className="u-margin-bottom" />
   </div>
 );
 

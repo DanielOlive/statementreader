@@ -15,28 +15,23 @@ const Uploader = () => {
       method: "POST",
       body: formData
     };
-    fetch(FILE_UPLOAD_PATH, config)
-      .then(response => response.json())
-      .catch(error => console.error("Error:", error))
-      .then(response => console.log("Success:", response));
+
+    fetch(FILE_UPLOAD_PATH, config);
   };
 
   const onFileLoad = e => {
     fileURL = e.target.files[0];
-    console.log(fileURL);
   };
 
   return (
-    <div className="file-uploader">
-      <form onSubmit={onFormSubmit}>
-        <Input
-          type="file"
-          onChange={onFileLoad}
-          className="file-uploader__input"
-        />
-        <Button type="submit">file upload</Button>
-      </form>
-    </div>
+    <form onSubmit={onFormSubmit} className="file-uploader">
+      <Input
+        type="file"
+        onChange={onFileLoad}
+        className="file-uploader__input"
+      />
+      <Button type="submit">file upload</Button>
+    </form>
   );
 };
 

@@ -19,7 +19,7 @@
 .filter-panel {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     align-content: start;
     grid-area: filter-panel;
 }
@@ -56,4 +56,10 @@
     background: $global-nav-colour;
     border-radius: 100px;
     padding: 1rem;
+}
+
+// Toggle
+
+.transaction-toggle {
+    width:6rem;
 }

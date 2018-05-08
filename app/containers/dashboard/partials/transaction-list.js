@@ -1,17 +1,24 @@
 import React from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import { Icon } from "semantic-ui-react";
 import {
   fetchTransactions,
   incrementTotalAmount,
-  decrementTotalAmount
+  decrementTotalAmount,
+  markTransactionAsPaid
 } from "../actions";
 import { getTransactions, getTransactionToggle } from "../selectors";
+
+import ConfirmationModal from "../../../components/confirmation-modal";
 
 class TransactionList extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      selectedIDs: []
+    };
+    this.handleConfirmation = this.handleConfirmation.bind(this);
   }
 
   componentWillMount() {
@@ -20,13 +27,25 @@ class TransactionList extends React.Component {
 
   handleSelection(e, value) {
     this.isChecked = e.currentTarget.checked;
-    const { amount, reference } = value;
+    const { amount, reference, _id } = value;
 
     if (this.isChecked) {
       this.props.incrementTotalAmount(amount, reference);
+      this.setState({
+        selectedIDs: [...this.state.selectedIDs, _id]
+      });
     } else {
       this.props.decrementTotalAmount(amount, reference);
+      const selectedIDs = this.state.selectedIDs.filter(id => id !== _id);
+      this.setState({
+        selectedIDs
+      });
     }
+  }
+
+  handleConfirmation() {
+    this.props.markTransactionAsPaid(this.state.selectedIDs);
+    this.setState({ selectedIDs: [] });
   }
 
   render() {
@@ -48,7 +67,10 @@ class TransactionList extends React.Component {
 
         {transactions &&
           transactionsFiltered.map(
-            ({ date, amount, retailer, reference, checked }) => (
+            (
+              { date, amount, retailer, reference, checked, _id, paid },
+              idx
+            ) => (
               <div
                 key={Math.random()}
                 className={`transaction-list__item ${checked && "active"}`}
@@ -56,12 +78,14 @@ class TransactionList extends React.Component {
                 <p>{date}</p>
                 <p>{retailer}</p>
                 <p>{amount}</p>
-                <p>-</p>
+                <p>
+                  {paid ? <Icon name="payment" /> : "-"} {idx}
+                </p>
                 <p>
                   <input
                     type="checkbox"
                     onChange={e =>
-                      this.handleSelection(e, { amount, reference })
+                      this.handleSelection(e, { amount, reference, _id })
                     }
                     checked={checked}
                   />
@@ -69,6 +93,15 @@ class TransactionList extends React.Component {
               </div>
             )
           )}
+
+        {this.state.selectedIDs.length && (
+          <ConfirmationModal
+            cta="Mark as Paid"
+            description="Are you sure you want to mark the selected items as paid?"
+            title="Mark as Paid"
+            yesBtn={this.handleConfirmation}
+          />
+        )}
       </div>
     );
   }
@@ -78,6 +111,7 @@ TransactionList.propTypes = {
   transactions: PropTypes.array,
   fetchTransactions: PropTypes.func,
   incrementTotalAmount: PropTypes.func,
+  markTransactionAsPaid: PropTypes.func,
   decrementTotalAmount: PropTypes.func
 };
 
@@ -89,7 +123,8 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = {
   fetchTransactions,
   incrementTotalAmount,
-  decrementTotalAmount
+  decrementTotalAmount,
+  markTransactionAsPaid
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TransactionList);
