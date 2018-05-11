@@ -1,5 +1,9 @@
+import axios from "axios";
 import { createPropsSelector } from "reselect-immutable-helpers";
-import { TRANSACTIONLIST_PATH } from "../../config";
+import {
+  TRANSACTIONLIST_PATH,
+  UPDATE_TRANSACTIONLIST_PATH
+} from "../../config";
 import * as types from "../../types";
 import { getTotalAmount, getTransactions } from "../dashboard/selectors";
 
@@ -20,11 +24,9 @@ const transactionSuccess = transactions => ({
 
 export const fetchTransactions = () => dispatch => {
   dispatch(transactionRequest(true));
-  fetch(TRANSACTIONLIST_PATH)
-    .then(response => response.json())
-    .then(transactions => {
-      dispatch(transactionSuccess(transactions.data));
-    })
+  axios
+    .get(TRANSACTIONLIST_PATH)
+    .then(transactions => dispatch(transactionSuccess(transactions.data.data)))
     .catch(() => dispatch(transactionFailure(true)));
 };
 
@@ -72,7 +74,7 @@ export const transToggle = toggle => dispatch => {
 // Mark transactions as paid
 
 export const markTransactionAsPaid = ids => dispatch => {
-  fetch("http://localhost:3020/api/transactions/update", {
+  fetch(UPDATE_TRANSACTIONLIST_PATH, {
     method: "POST",
     body: JSON.stringify(ids),
     headers: {

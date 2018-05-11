@@ -1,12 +1,10 @@
-import 'semantic-ui-css/semantic.min.css';
-import Styles from "./styles/main.scss"
 import React from "react"
+import 'semantic-ui-css/semantic.min.css';
+import "./styles/main.scss"
 import Routes from "./routes"
 
-class App extends React.Component {
-  render() {
-    return <Routes />
-  }
-}
+const App = () => <Routes />
+
+
 
 export default App

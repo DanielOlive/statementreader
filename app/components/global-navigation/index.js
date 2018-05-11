@@ -14,7 +14,8 @@ class GlobalNav extends React.Component {
 
   handleItemClick(e, { name }) {
     this.setState({ activeItem: name });
-    this.props.history.push(`/${name}`);
+    const path = name === "home" ? "/" : `/${name}`;
+    this.props.history.push(path);
   }
 
   render() {
@@ -48,6 +49,6 @@ class GlobalNav extends React.Component {
 
 /* GlobalNav.propTypes = {
   history: PropTypes.func
-} */
+}  */
 
 export default withRouter(GlobalNav);
