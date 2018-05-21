@@ -1,4 +1,3 @@
-import axios from "axios";
 import { createPropsSelector } from "reselect-immutable-helpers";
 import {
   TRANSACTIONLIST_PATH,
@@ -6,6 +5,7 @@ import {
 } from "../../config";
 import * as types from "../../types";
 import { getTotalAmount, getTransactions } from "../dashboard/selectors";
+import api from "../../api";
 
 const transactionFailure = bool => ({
   type: types.API_CALL_FAILURE,
@@ -24,9 +24,9 @@ const transactionSuccess = transactions => ({
 
 export const fetchTransactions = () => dispatch => {
   dispatch(transactionRequest(true));
-  axios
-    .get(TRANSACTIONLIST_PATH)
-    .then(transactions => dispatch(transactionSuccess(transactions.data.data)))
+  api.transactions
+    .getTransactions()
+    .then(transactions => dispatch(transactionSuccess(transactions)))
     .catch(() => dispatch(transactionFailure(true)));
 };
 
@@ -74,18 +74,31 @@ export const transToggle = toggle => dispatch => {
 // Mark transactions as paid
 
 export const markTransactionAsPaid = ids => dispatch => {
-  fetch(UPDATE_TRANSACTIONLIST_PATH, {
-    method: "POST",
-    body: JSON.stringify(ids),
-    headers: {
-      "Content-Type": "application/json"
-    }
-  })
-    .then(res => res.json())
+  api.transactions
+    .markAsPaid(ids)
     .catch(error => console.error("Error:", error))
     .then(response => {
       console.log("Success:", response);
       dispatch(fetchTransactions());
     });
+
   // dispatch({ type: types.MARK_TRANSACTION_AS_PAID, toggle });
 };
+
+// File Uploading
+
+/* export const uploadCSV = formData => dispatch => {
+  dispatch({type:types.UPLOAD_CSV_REQUEST, uploadStarted:true})
+  api.transactions.uploadCSVFile(formData)
+  .catch(err => dispatch({ type: types.UPLOAD_CSV_FAILURE}))
+  .then(response => {
+     console.log("Success:", response);
+     dispatch(fetchTransactions());
+    dispatch({ type: types.UPLOAD_CSV_SUCCESS, uploadComplete:true })
+  })
+} */
+
+export const uploadCSV = formData => dispatch =>
+  api.transactions
+    .uploadCSVFile(formData)
+    .then(() => dispatch(fetchTransactions()));

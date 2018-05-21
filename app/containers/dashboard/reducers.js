@@ -1,30 +1,6 @@
 import { combineReducers } from "redux";
 import * as types from "../../types";
 
-/* const transactionlist = (state = {
-  fetching: true,
-  error: null
-}, action) => {
-  switch (action.type) {
-    case types.API_CALL_REQUEST:
-      console.log(types.API_CALL_REQUEST);
-      return state;
-      break;
-    case types.API_CALL_SUCCESS:
-      console.log(types.API_CALL_SUCCESS);
-      return {
-        transactions: action.transactions,
-        fetching: null
-      };
-      break;
-    case types.API_CALL_FAILURE:
-      console.log(types.API_CALL_FAILURE);
-      return state;
-      break;
-    default:
-      return state;
-  }
-}; */
 const isFetching = (state = false, action) => {
   switch (action.type) {
     case types.API_CALL_REQUEST:
