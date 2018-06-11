@@ -8,4 +8,8 @@ export const userLoggedIn = user => ({
 });
 
 export const login = credentials => dispatch =>
-  api.user.login(credentials).then(user => dispatch(userLoggedIn(user)));
+  api.user.login(credentials).then(user => {
+    // Move the below local storage to a utility function
+    localStorage.statementReader = user.token;
+    dispatch(userLoggedIn(user));
+  });

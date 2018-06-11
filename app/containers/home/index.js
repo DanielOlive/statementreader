@@ -1,18 +1,31 @@
 import React from "react";
-import Uploader from "../../components/uploader";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
-const Home = () => {
+const Home = ({ isAuthenticated }) => {
   const loc = { history: { location } };
-  console.log(loc);
+  // console.log(loc);
   return (
     <div>
       <hr />
       <h1>Home</h1>
       <hr />
-      <Link to="/login">Login</Link>
+      {isAuthenticated ? (
+        <button>Logout</button>
+      ) : (
+        <Link to="/login">Login</Link>
+      )}
     </div>
   );
 };
+Home.propTypes = {
+  isAuthenticated: PropTypes.bool.required
+};
 
-export default Home;
+const mapStateToProps = state => ({
+  isAuthenticated: !!state.user.token
+});
+
+const mapDispatchToProps = {};
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
