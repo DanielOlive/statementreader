@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import moment from "moment";
 import { Icon } from "semantic-ui-react";
 import {
   fetchTransactions,
@@ -23,6 +24,21 @@ class TransactionList extends React.Component {
 
   componentWillMount() {
     this.props.fetchTransactions();
+  }
+
+  componentDidUpdate(nextProps) {
+    if (nextProps.toggleValue !== this.props.toggleValue) {
+      console.clear();
+      this.props.transactions
+        .filter(item => item.checked)
+        .forEach(({ date, amount, retailer }) => {
+          console.log(
+            moment(date).format("DD/MM/YYYY"),
+            retailer,
+            `£${amount}`
+          );
+        });
+    }
   }
 
   handleSelection(e, value) {
@@ -75,12 +91,10 @@ class TransactionList extends React.Component {
                 key={Math.random()}
                 className={`transaction-list__item ${checked && "active"}`}
               >
-                <p>{date}</p>
+                <p>{moment(date).format("DD/MM/YYYY")}</p>
                 <p>{retailer}</p>
                 <p>{amount}</p>
-                <p>
-                  {paid ? <Icon name="payment" /> : "-"} {idx}
-                </p>
+                <p>{paid ? <Icon name="payment" /> : "-"}</p>
                 <p>
                   <input
                     type="checkbox"
@@ -112,7 +126,8 @@ TransactionList.propTypes = {
   fetchTransactions: PropTypes.func,
   incrementTotalAmount: PropTypes.func,
   markTransactionAsPaid: PropTypes.func,
-  decrementTotalAmount: PropTypes.func
+  decrementTotalAmount: PropTypes.func,
+  toggleValue: PropTypes.bool
 };
 
 const mapStateToProps = state => ({

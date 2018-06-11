@@ -20,7 +20,9 @@ class UploaderModal extends Component {
 
     return (
       <div>
-        <Button onClick={this.show("mini")}>Import File</Button>
+        <Button onClick={this.show("mini")} size="tiny">
+          Import File
+        </Button>
         <Modal
           size={size}
           open={open}

@@ -1,13 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { Form, Button, Message } from "semantic-ui-react";
+import { Form, Button, Message, Dropdown, Menu } from "semantic-ui-react";
 import { uploadCSV } from "../../containers/dashboard/actions";
 import InlineErrors from "../../components/messages/inlineError";
 
 class Uploader extends React.Component {
   state = {
-    data: {},
+    data: {
+      accountSelector: "amex"
+    },
     loading: false,
     errors: {}
   };
@@ -21,6 +23,7 @@ class Uploader extends React.Component {
       this.setState({ loading: true });
       const formData = new FormData();
       formData.append("file", this.state.data.uploader);
+      formData.append("provider", this.state.data.accountSelector);
 
       this.props
         .uploadCSV(formData)
@@ -34,6 +37,12 @@ class Uploader extends React.Component {
   onFileLoad = e => {
     this.setState({
       data: { ...this.state.data, [e.target.name]: e.target.files[0] }
+    });
+  };
+
+  onAccountChange = e => {
+    this.setState({
+      data: { ...this.state.data, [e.target.name]: e.target.value }
     });
   };
 
@@ -71,6 +80,18 @@ class Uploader extends React.Component {
             className="file-uploader__input"
             color="teal"
           />
+
+          <Form.Field
+            id="accountSelector"
+            name="accountSelector"
+            label="Account Selector"
+            control="select"
+            onChange={this.onAccountChange}
+          >
+            <option value="amex">American express</option>
+            <option value="halifax">Halifax</option>
+          </Form.Field>
+
           {errors.uploader && <InlineErrors text={errors.uploader} />}
         </Form.Field>
 

@@ -10,7 +10,7 @@ const TransactionToggle = ({ transToggle, toggleValue }) => {
     transToggle(!toggleValue);
   };
   return (
-    <Segment compact className="transaction-toggle">
+    <Segment className="transaction-toggle mini">
       <Radio toggle onChange={() => toggle()} checked={toggleValue} />
     </Segment>
   );

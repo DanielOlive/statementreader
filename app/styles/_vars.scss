@@ -1,6 +1,11 @@
+
+
+$header-font-family: 'Tahoma', 'Roboto', 'Fira Sans', 'Segoe UI', sans-serif;
+$loaded-header-font-family: 'Lato', $header-font-family;
+
 $global-nav-colour:#3d4a57;
 $border-colour: #666;
-$body-colour: rgb(80,66, 79);
+$body-colour: #000000;
 $container-colour: rgb(40,45,47);
 $colour-White: #FFF;
 
@@ -16,6 +21,24 @@ $font-size: 14px;
 $filter-font-size: 13px;
 $small-font-size: 12px;
 $smaller-font-size: 8px;
+
+// Line height
+$huge-line-height: 32px;
+$bigger-line-height: 28px;
+$big-line-height: 24px;
+$line-height: 20px;
+$small-line-height: 16px;
+$smaller-line-height: 12px;
+$tiny-line-height: 8px;
+
+// Font weight
+$thin-font-weight: 100;
+$extra-light-font-weight: 200;
+$light-font-weight: 300;
+$regular-font-weight: 400;
+$medium-font-weight: 500;
+$semi-bold-font-weight: 600;
+$bold-font-weight: 700;
 
 // Break points
 $xsmall-width: 480px;

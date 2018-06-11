@@ -1,0 +1,89 @@
+// Project heading mixins
+
+@mixin heading() {
+    margin: 0;
+
+    font-family: $header-font-family;
+    font-weight: normal;
+    line-height: 1.25;
+
+    // Added with webfontloader. See loadFonts() in app/container.js
+    .wf-active & {
+        font-family: $loaded-header-font-family;
+    }
+}
+
+@mixin h1() {
+    font-weight: $light-font-weight;
+    font-size: $bigger-font-size;
+    line-height: $huge-line-height;
+}
+
+@mixin h2() {
+    font-weight: $bold-font-weight;
+    font-size: $medium-font-size;
+    line-height: $bigger-line-height;
+}
+
+@mixin h3() {
+    font-weight: $regular-font-weight;
+    font-size: $medium-font-size;
+    line-height: $bigger-font-size;
+}
+
+@mixin h4() {
+    font-weight: $bold-font-weight;
+    font-size: $font-size;
+    line-height: $bigger-font-size;
+}
+
+@mixin h5() {
+    font-weight: $regular-font-weight;
+    font-size: $font-size;
+    line-height: $big-font-size;
+}
+
+@mixin h6() {
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin h2__sub-heading() {
+    font-weight: $light-font-weight;
+    font-size: $bigger-font-size;
+    line-height: $huge-line-height;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include heading();
+}
+
+h1 {
+    @include h1();
+}
+
+h2 {
+    @include h2();
+}
+
+h3 {
+    @include h3();
+}
+
+h4 {
+    @include h4();
+}
+
+h5 {
+    @include h5();
+}
+
+h6 {
+    @include h6();
+}
