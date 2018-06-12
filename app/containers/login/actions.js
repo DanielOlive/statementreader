@@ -7,9 +7,18 @@ export const userLoggedIn = user => ({
   user
 });
 
+export const userLoggedOut = () => ({
+  type: types.USER_LOGGED_OUT
+});
+
 export const login = credentials => dispatch =>
   api.user.login(credentials).then(user => {
     // Move the below local storage to a utility function
-    localStorage.statementReader = user.token;
+    localStorage.statementReaderJWT = user.token;
     dispatch(userLoggedIn(user));
   });
+
+export const logout = () => dispatch => {
+  localStorage.removeItem("statementReaderJWT");
+  dispatch(userLoggedOut());
+};

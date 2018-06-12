@@ -8,7 +8,7 @@ class Login extends React.Component {
   state = {};
 
   onSubmit = data =>
-    this.props.login(data).then(() => this.props.history.push("/"));
+    this.props.login(data).then(() => this.props.history.push("/dashboard"));
 
   render() {
     return (

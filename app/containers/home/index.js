@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import * as actions from "../login/actions";
 
-const Home = ({ isAuthenticated }) => {
+const Home = ({ isAuthenticated, logout }) => {
   const loc = { history: { location } };
   // console.log(loc);
   return (
@@ -12,7 +13,7 @@ const Home = ({ isAuthenticated }) => {
       <h1>Home</h1>
       <hr />
       {isAuthenticated ? (
-        <button>Logout</button>
+        <button onClick={() => logout()}>Logout</button>
       ) : (
         <Link to="/login">Login</Link>
       )}
@@ -20,12 +21,15 @@ const Home = ({ isAuthenticated }) => {
   );
 };
 Home.propTypes = {
-  isAuthenticated: PropTypes.bool.required
+  isAuthenticated: PropTypes.bool,
+  logout: PropTypes.func
 };
 
 const mapStateToProps = state => ({
   isAuthenticated: !!state.user.token
 });
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = {
+  logout: actions.logout
+};
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
