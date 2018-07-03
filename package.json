@@ -7,7 +7,10 @@
     "precommit": "lint-staged",
     "dev": "webpack-dev-server --progress --colors --history-api-fallback",
     "start": "webpack && npm run dev",
-    "test": "jest"
+    "test": "NODE_ENV=test jest --watch --config config/jest/jest.config.js",
+    "test-coverage": "jest --config config/jest/jest.config.js --coverage",
+    "coverage-report": "open ./coverage/lcov-report/index.html",
+    "coverage": "jest --coverage"
   },
   "lint-staged": {
     "*.{js, jsx, json, css, scss, md}": [
@@ -19,6 +22,8 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "moment": "^2.22.1",
     "prettier": "^1.12.1",
     "prop-types": "^15.6.1",
@@ -38,8 +43,9 @@
     "autoprefixer": "^8.0.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.3",
-    "babel-jest": "^22.4.4",
+    "babel-jest": "^23.0.1",
     "babel-loader": "^7.1.2",
+    "babel-plugin-dynamic-import-node": "^1.2.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
