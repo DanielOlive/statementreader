@@ -70,7 +70,7 @@ module.exports = {
         // browse to http://localhost:3000/ during development
         host: "localhost",
         port: 3000,
-        // Ghost Blog proxy Server endpoint
+        // proxy Server endpoint
         proxy: "http://localhost:8080"
       },
       {
