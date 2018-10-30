@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/danolive0/.nvm/versions/node/v6.9.5/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js add --dev babel-plugin-dynamic-import-node
+  /Users/danolive0/.nvm/versions/node/v6.9.5/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js start
 
 PATH: 
   /Users/danolive0/.nvm/versions/node/v6.9.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -23,7 +23,10 @@ npm manifest:
       "precommit": "lint-staged",
       "dev": "webpack-dev-server --progress --colors --history-api-fallback",
       "start": "webpack && npm run dev",
-      "test": "jest --watch"
+      "test": "NODE_ENV=test jest --watch --config config/jest/jest.config.js",
+      "test-coverage": "jest --config config/jest/jest.config.js --coverage",
+      "coverage-report": "open ./coverage/lcov-report/index.html",
+      "coverage": "jest --coverage"
     },
     "lint-staged": {
       "*.{js, jsx, json, css, scss, md}": [
@@ -56,8 +59,9 @@ npm manifest:
       "autoprefixer": "^8.0.0",
       "babel-core": "^6.26.0",
       "babel-eslint": "^8.2.3",
-      "babel-jest": "^22.4.4",
+      "babel-jest": "^23.0.1",
       "babel-loader": "^7.1.2",
+      "babel-plugin-dynamic-import-node": "^1.2.0",
       "babel-plugin-transform-class-properties": "^6.24.1",
       "babel-plugin-transform-object-rest-spread": "^6.26.0",
       "babel-preset-env": "^1.6.1",
@@ -81,6 +85,7 @@ npm manifest:
       "husky": "^0.14.3",
       "image-webpack-loader": "^4.2.0",
       "jest": "^22.4.4",
+      "jsdom": "^11.11.0",
       "lint-staged": "^7.0.4",
       "node-sass": "^4.7.2",
       "postcss-loader": "^2.1.0",
@@ -813,6 +818,13 @@ Lockfile:
       babel-plugin-istanbul "^4.1.5"
       babel-preset-jest "^22.4.4"
   
+  babel-jest@^23.0.1:
+    version "23.0.1"
+    resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-23.0.1.tgz#bbad3bf523fb202da05ed0a6540b48c84eed13a6"
+    dependencies:
+      babel-plugin-istanbul "^4.1.6"
+      babel-preset-jest "^23.0.1"
+  
   babel-loader@^7.1.2:
     version "7.1.4"
     resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-7.1.4.tgz#e3463938bd4e6d55d1c174c5485d406a188ed015"
@@ -833,7 +845,13 @@ Lockfile:
     dependencies:
       babel-runtime "^6.22.0"
   
-  babel-plugin-istanbul@^4.1.5:
+  babel-plugin-dynamic-import-node@^1.2.0:
+    version "1.2.0"
+    resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-1.2.0.tgz#f91631e703e0595e47d4beafbb088576c87fbeee"
+    dependencies:
+      babel-plugin-syntax-dynamic-import "^6.18.0"
+  
+  babel-plugin-istanbul@^4.1.5, babel-plugin-istanbul@^4.1.6:
     version "4.1.6"
     resolved "https://registry.yarnpkg.com/babel-plugin-istanbul/-/babel-plugin-istanbul-4.1.6.tgz#36c59b2192efce81c5b378321b74175add1c9a45"
     dependencies:
@@ -845,6 +863,10 @@ Lockfile:
   babel-plugin-jest-hoist@^22.4.4:
     version "22.4.4"
     resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-22.4.4.tgz#b9851906eab34c7bf6f8c895a2b08bea1a844c0b"
+  
+  babel-plugin-jest-hoist@^23.0.1:
+    version "23.0.1"
+    resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-23.0.1.tgz#eaa11c964563aea9c21becef2bdf7853f7f3c148"
   
   babel-plugin-syntax-async-functions@^6.8.0:
     version "6.13.0"
@@ -1256,6 +1278,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-22.4.4.tgz#ec9fbd8bcd7dfd24b8b5320e0e688013235b7c39"
     dependencies:
       babel-plugin-jest-hoist "^22.4.4"
+      babel-plugin-syntax-object-rest-spread "^6.13.0"
+  
+  babel-preset-jest@^23.0.1:
+    version "23.0.1"
+    resolved "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-23.0.1.tgz#631cc545c6cf021943013bcaf22f45d87fe62198"
+    dependencies:
+      babel-plugin-jest-hoist "^23.0.1"
       babel-plugin-syntax-object-rest-spread "^6.13.0"
   
   babel-preset-react@^6.24.1:
@@ -2650,6 +2679,12 @@ Lockfile:
   "cssstyle@>= 0.2.37 < 0.3.0":
     version "0.2.37"
     resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-0.2.37.tgz#541097234cb2513c83ceed3acddc27ff27987d54"
+    dependencies:
+      cssom "0.3.x"
+  
+  "cssstyle@>= 0.3.1 < 0.4.0":
+    version "0.3.1"
+    resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-0.3.1.tgz#6da9b4cff1bc5d716e6e5fe8e04fcb1b50a49adf"
     dependencies:
       cssom "0.3.x"
   
@@ -6164,6 +6199,37 @@ Lockfile:
       temp "^0.8.1"
       write-file-atomic "^1.2.0"
   
+  jsdom@^11.11.0:
+    version "11.11.0"
+    resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-11.11.0.tgz#df486efad41aee96c59ad7a190e2449c7eb1110e"
+    dependencies:
+      abab "^1.0.4"
+      acorn "^5.3.0"
+      acorn-globals "^4.1.0"
+      array-equal "^1.0.0"
+      cssom ">= 0.3.2 < 0.4.0"
+      cssstyle ">= 0.3.1 < 0.4.0"
+      data-urls "^1.0.0"
+      domexception "^1.0.0"
+      escodegen "^1.9.0"
+      html-encoding-sniffer "^1.0.2"
+      left-pad "^1.2.0"
+      nwsapi "^2.0.0"
+      parse5 "4.0.0"
+      pn "^1.1.0"
+      request "^2.83.0"
+      request-promise-native "^1.0.5"
+      sax "^1.2.4"
+      symbol-tree "^3.2.2"
+      tough-cookie "^2.3.3"
+      w3c-hr-time "^1.0.1"
+      webidl-conversions "^4.0.2"
+      whatwg-encoding "^1.0.3"
+      whatwg-mimetype "^2.1.0"
+      whatwg-url "^6.4.1"
+      ws "^4.0.0"
+      xml-name-validator "^3.0.0"
+  
   jsdom@^11.5.1:
     version "11.8.0"
     resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-11.8.0.tgz#a52e9a7d2b931284f62c80dad5f17d7390499d8b"
@@ -7349,6 +7415,10 @@ Lockfile:
   nwmatcher@^1.4.3:
     version "1.4.4"
     resolved "https://registry.yarnpkg.com/nwmatcher/-/nwmatcher-1.4.4.tgz#2285631f34a95f0d0395cd900c96ed39b58f346e"
+  
+  nwsapi@^2.0.0:
+    version "2.0.5"
+    resolved "https://registry.yarnpkg.com/nwsapi/-/nwsapi-2.0.5.tgz#3998cfe7a014600e5e30dedb1fef2a4404b2871f"
   
   oauth-sign@~0.8.1, oauth-sign@~0.8.2:
     version "0.8.2"
@@ -10141,7 +10211,7 @@ Lockfile:
     dependencies:
       punycode "^1.4.1"
   
-  tr46@^1.0.0:
+  tr46@^1.0.0, tr46@^1.0.1:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/tr46/-/tr46-1.0.1.tgz#a8b13fd6bfd2489519674ccde55ba3693b706d09"
     dependencies:
@@ -10743,6 +10813,14 @@ Lockfile:
       tr46 "^1.0.0"
       webidl-conversions "^4.0.1"
   
+  whatwg-url@^6.4.1:
+    version "6.5.0"
+    resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-6.5.0.tgz#f2df02bff176fd65070df74ad5ccbb5a199965a8"
+    dependencies:
+      lodash.sortby "^4.7.0"
+      tr46 "^1.0.1"
+      webidl-conversions "^4.0.2"
+  
   whet.extend@~0.9.9:
     version "0.9.9"
     resolved "https://registry.yarnpkg.com/whet.extend/-/whet.extend-0.9.9.tgz#f877d5bf648c97e5aa542fadc16d6a259b9c11a1"
@@ -11092,12 +11170,18 @@ Lockfile:
       yeoman-environment "^2.0.5"
 
 Trace: 
-  Error: Found incompatible module
-      at MessageError.Error (native)
-      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
-      at checkOne (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:62444:11)
-      at Object.check (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:62463:5)
-      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:22803:73
-      at next (native)
-      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
-      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:109:13
+  Error: Command failed.
+  Exit code: 2
+  Command: sh
+  Arguments: -c webpack && npm run dev
+  Directory: /Storage/projects/statementreader
+  Output:
+  
+      at ProcessTermError.Error (native)
+      at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:30281:17)
+      at emitTwo (events.js:106:13)
+      at ChildProcess.emit (events.js:191:7)
+      at maybeClose (internal/child_process.js:877:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)

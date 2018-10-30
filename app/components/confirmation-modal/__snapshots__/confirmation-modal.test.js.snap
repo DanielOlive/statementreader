@@ -1,0 +1,421 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ConfirmationModal /> matches the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ConfirmationModal
+    cta=""
+    description=""
+    title=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Header
+          content=""
+          icon="archive"
+        />,
+        <ModalContent>
+          <p>
+            
+          </p>
+        </ModalContent>,
+        <ModalActions>
+          <Button
+            as="button"
+            color="red"
+          >
+            <Icon
+              as="i"
+              name="remove"
+            />
+             No
+          </Button>
+          <Button
+            as="button"
+            color="green"
+            onClick={undefined}
+          >
+            <Icon
+              as="i"
+              name="checkmark"
+            />
+             Yes
+          </Button>
+        </ModalActions>,
+      ],
+      "closeIcon": true,
+      "closeOnDimmerClick": true,
+      "closeOnDocumentClick": false,
+      "dimmer": true,
+      "eventPool": "Modal",
+      "style": Object {
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": "20px !important",
+      },
+      "trigger": <Button
+        as="button"
+      >
+        
+      </Button>,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "content": "",
+          "icon": "archive",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <p>
+            
+          </p>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "p",
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Button
+              as="button"
+              color="red"
+            >
+              <Icon
+                as="i"
+                name="remove"
+              />
+               No
+            </Button>,
+            <Button
+              as="button"
+              color="green"
+              onClick={undefined}
+            >
+              <Icon
+                as="i"
+                name="checkmark"
+              />
+               Yes
+            </Button>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "as": "button",
+              "children": Array [
+                <Icon
+                  as="i"
+                  name="remove"
+                />,
+                " No",
+              ],
+              "color": "red",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "as": "i",
+                  "name": "remove",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              " No",
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "as": "button",
+              "children": Array [
+                <Icon
+                  as="i"
+                  name="checkmark"
+                />,
+                " Yes",
+              ],
+              "color": "green",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "as": "i",
+                  "name": "checkmark",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              " Yes",
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Header
+            content=""
+            icon="archive"
+          />,
+          <ModalContent>
+            <p>
+              
+            </p>
+          </ModalContent>,
+          <ModalActions>
+            <Button
+              as="button"
+              color="red"
+            >
+              <Icon
+                as="i"
+                name="remove"
+              />
+               No
+            </Button>
+            <Button
+              as="button"
+              color="green"
+              onClick={undefined}
+            >
+              <Icon
+                as="i"
+                name="checkmark"
+              />
+               Yes
+            </Button>
+          </ModalActions>,
+        ],
+        "closeIcon": true,
+        "closeOnDimmerClick": true,
+        "closeOnDocumentClick": false,
+        "dimmer": true,
+        "eventPool": "Modal",
+        "style": Object {
+          "marginLeft": "auto",
+          "marginRight": "auto",
+          "marginTop": "20px !important",
+        },
+        "trigger": <Button
+          as="button"
+        >
+          
+        </Button>,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "content": "",
+            "icon": "archive",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <p>
+              
+            </p>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "p",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Button
+                as="button"
+                color="red"
+              >
+                <Icon
+                  as="i"
+                  name="remove"
+                />
+                 No
+              </Button>,
+              <Button
+                as="button"
+                color="green"
+                onClick={undefined}
+              >
+                <Icon
+                  as="i"
+                  name="checkmark"
+                />
+                 Yes
+              </Button>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "as": "button",
+                "children": Array [
+                  <Icon
+                    as="i"
+                    name="remove"
+                  />,
+                  " No",
+                ],
+                "color": "red",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "as": "i",
+                    "name": "remove",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                " No",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "as": "button",
+                "children": Array [
+                  <Icon
+                    as="i"
+                    name="checkmark"
+                  />,
+                  " Yes",
+                ],
+                "color": "green",
+                "onClick": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "as": "i",
+                    "name": "checkmark",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                " Yes",
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

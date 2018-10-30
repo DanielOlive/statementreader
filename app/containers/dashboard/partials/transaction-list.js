@@ -31,6 +31,7 @@ class TransactionList extends React.Component {
       console.clear();
       this.props.transactions
         .filter(item => item.checked)
+        .reverse()
         .forEach(({ date, amount, retailer }) => {
           console.log(
             moment(date).format("DD/MM/YYYY"),
